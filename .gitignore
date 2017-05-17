@@ -1,0 +1,35 @@
+
+# Generated assets
+
+assets/css/*
+assets/js/*
+assets/img/*
+assets/cache/*
+
+# Vendors and dependencies
+
+node_modules/
+bower_components/
+composer.phar
+php-cs-fixer
+.grunt/*
+
+
+# Logs, Cache, temp and personal files
+
+
+
+*.log
+
+npm-debug.log.*
+.sass-cache/
+composer.lock
+
+
+
+# Config
+
+config/settings_*.json
+
+
+# Translations and emails templates
