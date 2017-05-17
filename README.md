@@ -46,15 +46,16 @@ As stylesheets and javascript files are compiled and minified, you may wonder ho
 build new version of theses files after your modifications. You can use npm to check
 for any update and update the production version used by PrestaShop (localized in `assets` folder).
 
-> If you want to compile your assets using Webpack (and we advise you to), follow these steps:
 
-To build your assets once, type :
+If you want to compile your assets using Webpack (and we advise you to), follow these steps:
+
+> To build your assets once, type :
 
 ```bash
 $ npm run build
 ```
 
-To rebuild your assets every time you change a file in the _dev folder, type :
+> To rebuild your assets every time you change a file in the _dev folder, type :
 
 ```bash
 $ npm run watch
@@ -66,8 +67,8 @@ Note: You should probably **start by removing all existing styles**.
 
 The Webpack configuration file for theme is thus:
 
--All CSS rules go to the assets/css/theme.css file.
--All JavaScript code go to the assets/js/theme.js file.
+- All CSS rules go to the assets/css/theme.css file.
+- All JavaScript code go to the assets/js/theme.js file.
 
 It provides proper configuration for compile your Sass, Less, Stylus or CSS files into a single CSS file.
 
