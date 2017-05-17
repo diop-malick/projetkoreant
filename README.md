@@ -77,8 +77,10 @@ JavaScript code is written in ES6, and compiled to ES5 with Babel.
 ### Understanding the branches
 
 We use thow branche :
+
 - Develop
   - Used in local and for deploymenent in remote vps server ( vps365425.ovh.net/korean-test )
+
 - Master
   - Used to deploy in pré-prod ( vps365425.ovh.net/korean-t )
 
@@ -101,6 +103,7 @@ cp -R classic classic-korean-t
 ## Theme architecture
 
 Themes architecture has changed a lot since PrestaShop 1.7.
+
 
 ```
 .
@@ -134,6 +137,8 @@ Themes architecture has changed a lot since PrestaShop 1.7.
     ├── _partials/
     └── wrapper.tpl
 ```
+
+
 
 | Folder | Description |
 |-------:|------------|
