@@ -1,0 +1,28 @@
+.ido-top-banner,
+.ido-bottom-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .ido-banner-content{
+    max-width: 56em;
+    padding: 2em 1em;
+    margin: 0 auto;
+    h1{
+      font-size: 3em;
+      color: #FFF;
+      margin-bottom: 2em;
+    }
+    a {
+      padding: 1em;
+      border: 1px solid;
+      font-weight: 900;
+      color:#FFF;
+    }
+  }
+}
+.ido-top-banner {
+  min-height: 88vh;
+}
+.ido-bottom-banner {
+  min-height: 50vh;
+}

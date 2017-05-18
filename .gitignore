@@ -1,8 +1,13 @@
+# Ignore everything in the root except the "modules and themes directory.
 /*
-/modules/*
-!modules/ido_topbanner/*
-!modules/ido_bottombanner/*
-/themes/*
-!themes/idotea/*
 !.gitignore
 !README.md
+!modules/
+!themes/
+# Ignore everything in the modules directory, except the theme required modules
+modules/*
+!modules/ido_topbanner/
+!modules/ido_bottombanner/
+# Ignore everything in the themes directory, except the theme
+themes/*
+!themes/idotea

@@ -1,0 +1,37 @@
+@mixin search-box {
+  form {
+    position: relative;
+    display: inline-block;
+    input[type=text] {
+      &:focus {
+        outline: 1px $brand-primary solid;
+        color: $gray-dark;
+        background: white;
+        + button .search {
+          color: $brand-primary;
+        }
+      }
+      border: 1px solid;
+      padding: 15px;
+      min-width: 255px;
+      background: transparent;
+      color: $gray;
+    }
+    button[type=submit] {
+      position: absolute;
+      background: none;
+      border: none;
+      bottom: 10px;
+      right: 15px;
+      color: $gray-dark;
+      .search:hover {
+        color: $brand-primary;
+      }
+      outline:none;
+    }
+  }
+}
+
+@mixin box-shadow {
+  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.1);
+}

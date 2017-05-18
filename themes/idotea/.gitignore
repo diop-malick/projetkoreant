@@ -1,0 +1,19 @@
+# Vendors and dependencies
+
+_dev/node_modules
+
+# Logs, Cache, temp and personal files
+
+*.log
+_dev/npm-debug.log.*
+assets/cache/*
+cache/*
+
+# Generated assets
+
+assets/css/*
+assets/js/*
+
+
+# Config
+config/settings_*.json
