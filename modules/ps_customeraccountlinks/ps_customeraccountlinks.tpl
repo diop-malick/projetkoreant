@@ -1,5 +1,5 @@
 {*
-* 2007-2017 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,34 +18,17 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2017 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div id="block_myaccount_infos" class="col-md-2 links wrapper">
-  <h3 class="myaccount-title hidden-sm-down">
-    <a class="text-uppercase" href="{$urls.pages.my_account}" rel="nofollow">
-      {l s='Your account' d='Shop.Theme.Customeraccount'}
-    </a>
-  </h3>
-  <div class="title clearfix hidden-md-up" data-target="#footer_account_list" data-toggle="collapse">
-    <span class="h3">{l s='Your account' d='Shop.Theme.Customeraccount'}</span>
-    <span class="pull-xs-right">
-      <span class="navbar-toggler collapse-icons">
-        <i class="material-icons add">&#xE313;</i>
-        <i class="material-icons remove">&#xE316;</i>
-      </span>
-    </span>
-  </div>
-  <ul class="account-list collapse" id="footer_account_list">
+<div id="block_myaccount_infos">
+	<h4><a href="{$urls.pages.my_account}" title="{l s='Your account' d='Shop.Theme.Customeraccount'}" rel="nofollow">{l s='Your account' d='Shop.Theme.Customeraccount'}</a></h4>
+	<ul>
     {foreach from=$my_account_urls item=my_account_url}
-        <li>
-          <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">
-            {$my_account_url.title}
-          </a>
-        </li>
+        <li><a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">{$my_account_url.title}</a></li>
     {/foreach}
-    {hook h='displayMyAccountBlock'}
+    {hook h="displayMyAccountBlock"}
 	</ul>
 </div>

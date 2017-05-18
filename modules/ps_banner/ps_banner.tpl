@@ -1,5 +1,5 @@
 {*
-* 2007-2017 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,13 +18,13 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2017 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<a class="banner hidden-sm-down" href="{$banner_link}" title="{$banner_desc}">
+<a class="banner" href="{$banner_link}">
   {if isset($banner_img)}
-    <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
+    <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}">
   {else}
     <span>{$banner_desc}</span>
   {/if}

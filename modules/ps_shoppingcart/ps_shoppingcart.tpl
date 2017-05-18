@@ -1,15 +1,29 @@
-<div id="_desktop_cart">
-  <div class="blockcart cart-preview {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
+<div id="blockcart-wrapper">
+  <div class="blockcart cart-preview" data-refresh-url="{$refresh_url}">
     <div class="header">
-      {if $cart.products_count > 0}
-        <a rel="nofollow" href="{$cart_url}">
-      {/if}
-        <i class="material-icons shopping-cart">shopping_cart</i>
-        <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span>
-        <span class="cart-products-count">({$cart.products_count})</span>
-      {if $cart.products_count > 0}
-        </a>
-      {/if}
+      <a rel="nofollow" href="{$cart_url}">
+        <span>{l s='Cart' d='Shop.Theme.Actions'}</span>
+        <span>{$cart.summary_string}</span>
+      </a>
+    </div>
+    <div class="body">
+      <ul>
+        {foreach from=$cart.products item=product}
+          <li>{include 'module:ps_shoppingcart/ps_shoppingcart-product-line.tpl' product=$product}</li>
+        {/foreach}
+      </ul>
+      <div class="cart-subtotals">
+        {foreach from=$cart.subtotals item="subtotal"}
+          <div class="{$subtotal.type}">
+            <span class="label">{$subtotal.label}</span>
+            <span class="value">{$subtotal.amount}</span>
+          </div>
+        {/foreach}
+      </div>
+      <div class="cart-total">
+        <span class="label">{$cart.totals.total.label}</span>
+        <span class="value">{$cart.totals.total.amount}</span>
+      </div>
     </div>
   </div>
 </div>

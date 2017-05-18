@@ -1,5 +1,5 @@
 {*
-* 2007-2017 PrestaShop
+* 2007-2016 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,53 +18,22 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2017 PrestaShop SA
+*  @copyright  2007-2016 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div class="block_newsletter col-lg-8 col-md-12 col-sm-12">
-  <div class="row">
-    <p class="col-md-5 col-xs-12">{l s='Get our latest news and special sales' d='Shop.Theme'}</p>
-    <div class="col-md-7 col-xs-12">
-      <form action="{$urls.pages.index}#footer" method="post">
-        <div class="row">
-          <div class="col-xs-12">
-            <input
-              class="btn btn-primary pull-xs-right hidden-xs-down"
-              name="submitNewsletter"
-              type="submit"
-              value="{l s='Subscribe' d='Shop.Theme.Actions'}"
-            >
-            <input
-              class="btn btn-primary pull-xs-right hidden-sm-up"
-              name="submitNewsletter"
-              type="submit"
-              value="{l s='OK' d='Shop.Theme.Actions'}"
-            >
-            <div class="input-wrapper">
-              <input
-                name="email"
-                type="text"
-                value="{$value}"
-                placeholder="{l s='Your email address' d='Shop.Forms.Labels'}"
-              >
-            </div>
-            <input type="hidden" name="action" value="0">
-            <div class="clearfix"></div>
-          </div>
-          <div class="col-xs-12">
-              {if $conditions}
-                <p>{$conditions}</p>
-              {/if}
-              {if $msg}
-                <p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
-                  {$msg}
-                </p>
-              {/if}
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
+<div class="email_subscription">
+  <h4>{l s='Newsletter' d='Modules.Emailsubscription.Shop'}</h4>
+  {if $msg}
+    <p class="notification {if $nw_error}notification-error{else}notification-success{/if}">{$msg}</p>
+  {/if}
+  <form action="{$urls.pages.index}" method="post">
+    <input type="text" name="email" value="{$value}" placeholder="{l s='Your e-mail' d='Modules.Emailsubscription.Shop'}" />
+    {if $conditions}
+      <p>{$conditions}</p>
+    {/if}
+    <input type="submit" value="ok" name="submitNewsletter" />
+    <input type="hidden" name="action" value="0" />
+  </form>
 </div>

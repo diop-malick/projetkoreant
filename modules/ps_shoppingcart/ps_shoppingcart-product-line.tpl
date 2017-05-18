@@ -5,24 +5,23 @@
     rel="nofollow"
     href="{$product.remove_from_cart_url}"
     data-link-action="remove-from-cart"
-    title="{l s='remove from cart' d='Shop.Theme.Actions'}"
 >
-    {l s='Remove' d='Shop.Theme.Actions'}
+    {l s="Remove" d="Shop.Theme.Actions"}
 </a>
 {if $product.customizations|count}
     <div class="customizations">
         <ul>
-            {foreach from=$product.customizations item='customization'}
+            {foreach from=$product.customizations item="customization"}
                 <li>
                     <span class="product-quantity">{$customization.quantity}</span>
-                    <a href="{$customization.remove_from_cart_url}" title="{l s='remove from cart' d='Shop.Theme.Actions'}" class="remove-from-cart" rel="nofollow">{l s='Remove' d='Shop.Theme.Actions'}</a>
+                    <a href="{$customization.remove_from_cart_url}" class="remove-from-cart" rel="nofollow">{l s='Remove' d="Shop.Theme.Actions"}</a>
                     <ul>
-                        {foreach from=$customization.fields item='field'}
+                        {foreach from=$customization.fields item="field"}
                             <li>
-                                <span>{$field.label}</span>
+                                <label>{$field.label}</label>
                                 {if $field.type == 'text'}
-                                    <span>{$field.text nofilter}</span>
-                                {else if $field.type == 'image'}
+                                    <span>{$field.text}</span>
+                                {elseif $field.type == 'image'}
                                     <img src="{$field.image.small.url}">
                                 {/if}
                             </li>

@@ -1,5 +1,5 @@
 {*
-* 2007-2017 PrestaShop
+* 2007-2015 PrestaShop
 *
 * NOTICE OF LICENSE
 *
@@ -18,14 +18,14 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
-*  @copyright  2007-2017 PrestaShop SA
+*  @copyright  2007-2015 PrestaShop SA
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="_desktop_contact_link">
-  <div id="contact-link">
+<div id="contact-link">
+	<a href="{$urls.pages.contact}">{l s='Contact us' d='Modules.Contactinfo.Shop'}</a>
     {if $contact_infos.phone}
-      {* [1][/1] is for a HTML tag. *}
+      {* First tag [1][/1] is for a HTML tag. *}
       {l
         s='Call us: [1]%phone%[/1]'
         sprintf=[
@@ -33,10 +33,7 @@
           '[/1]' => '</span>',
           '%phone%' => $contact_infos.phone
         ]
-        d='Shop.Theme'
+        d='Modules.Contactinfo.Shop'
       }
-    {else}
-      <a href="{$urls.pages.contact}">{l s='Contact us' d='Shop.Theme'}</a>
     {/if}
-  </div>
 </div>

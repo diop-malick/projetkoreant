@@ -18,12 +18,12 @@ The Classic Theme is the new default Theme for Prestashop 1.7 and onwards. It is
 ## Step 2: Install Theme
 
 
-Clone this repository and move the `classic-korean-t` into `themes` folder.
+Clone this repository and move the `idotea` into `themes` folder.
 
 ```bash
 # in your PrestaShop folder
 $ cd themes
-$ git clone https://citizendiop@bitbucket.org/citizendiop/projetkoreant.git classic-korean-t
+$ git clone https://citizendiop@bitbucket.org/citizendiop/projetkoreant.git idotea
 ```
 
 ### Step 3: Manage assets
@@ -32,7 +32,7 @@ The Theme contains the development files in the `_dev` folder.
 navigate to <theme_folder> and Install the dependencies using `npm`:
 
 ```bash
-$ cd <theme_folder>/classic-korean-t
+$ cd <theme_folder>/idotea
 $ cd _dev && npm install
 ```
 
@@ -98,7 +98,7 @@ the default classic theme was copied in the followind way :
 
 ```bash
 cd <theme_folder>
-cp -R classic classic-korean-t
+cp -R classic idotea
 ```bash
 
 ## Theme architecture
