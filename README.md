@@ -2,28 +2,28 @@
 
 This theme is build upon the new PrestaShop Classic Theme.
 
-The Classic Theme is the new default Theme for Prestashop 1.7 and onwards. It is build itsefl upon the new Starter Theme. 
+The Classic Theme is the new default Theme for Prestashop 1.7 and onwards. It is build itsefl upon the new Starter Theme.
 
 
 
 ### Step 1: Install Prestashop & Configure Dev environnement
 
 - NodeJS & npm
-- install webpack globaly : 
+- install webpack globaly :
 - install composer
 - install required php extension   : intl, soap, ...
-- install Prestashop 
+- install Prestashop
 
 
 ## Step 2: Install Theme
 
 
-Clone this repository and move the `idotea` into `themes` folder.
+Clone this repository under your prestashop root folder.
 
 ```bash
-# in your PrestaShop folder
+# outside your PrestaShop root folder
 $ cd themes
-$ git clone https://citizendiop@bitbucket.org/citizendiop/projetkoreant.git idotea
+$ git clone https://citizendiop@bitbucket.org/citizendiop/projetkoreant.git prestashop_root
 ```
 
 ### Step 3: Manage assets
@@ -52,13 +52,13 @@ If you want to compile your assets using Webpack (and we advise you to), follow 
 > To build your assets once, type :
 
 ```bash
-$ npm run build
+$ npm run prod
 ```
 
 > To rebuild your assets every time you change a file in the _dev folder, type :
 
 ```bash
-$ npm run watch
+$ npm run dev
 ```
 
 Note: You should probably **start by removing all existing styles**.
@@ -77,7 +77,7 @@ JavaScript code is written in ES6, and compiled to ES5 with Babel.
 
 ### Understanding the branches
 
-We use thow branche :
+We use two branches :
 
 - Develop
   - Used in local and for deploymenent in remote vps server ( vps365425.ovh.net/korean-test )
@@ -93,8 +93,8 @@ Every importantes change must be commited explicitely and we will provide explic
 
 
 
-### copy thème par défaut 
-the default classic theme was copied in the followind way : 
+### copy thème par défaut
+the default classic theme was copied in the followind way :
 
 ```bash
 cd <theme_folder>
