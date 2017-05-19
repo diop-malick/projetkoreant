@@ -43,7 +43,6 @@
     }
   }
   .header-banner{
-    background: $gray-light;
     margin-bottom: 1em;
   }
   .header-nav {
@@ -82,12 +81,8 @@
     }
     .cart-preview {
       &.active {
-        background: $brand-primary;
         a {
-          color: white;
-        }
-        i {
-          color: rgba(255, 255, 255, 0.6);
+          color: $brand-primary;
         }
       }
       .shopping-cart {
@@ -244,7 +239,6 @@
     margin-top: 1rem;
   }
   #header {
-    background: $gray-light;
     .header-nav {
       background: white;
       margin-bottom: rem(10px);
@@ -285,7 +279,6 @@
       }
     }
     .header-top {
-      background: $gray-light;
       padding-bottom: 0;
       a[data-depth="0"] {
         color: $gray-darker;

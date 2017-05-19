@@ -6,7 +6,8 @@
   }
 }
 .product-price {
-  color: $brand-primary;
+  color: $gray-darker;
+  font-weight: 900;
   display: inline-block;
 }
 #product-description-short {
@@ -15,7 +16,7 @@
 .product-information {
   font-size: $font-size-lg;
   color: $gray-darker;
-
+  text-align: center;
   .manufacturer-logo {
     height: 35px;
   }
@@ -71,13 +72,12 @@
 }
 .product-quantity {
   .qty {
-    float: left;
+    display: inline-block;
     width: 80px;
-    margin-bottom: rem(8px);
   }
   .add {
-    float: left;
-    margin-bottom: rem(8px);
+    display: inline-block;
+    vertical-align: top;
   }
   #quantity_wanted {
     color: $gray-darker;
@@ -170,10 +170,10 @@
   margin-bottom: 0;
 }
 .tabs {
-  @include box-shadow;
   margin-top: rem(32px);
   background: white;
   padding: $medium-space $large-space;
+  text-align: left;
   .tab-pane {
     padding-top: $medium-space;
   }
@@ -185,12 +185,13 @@
       border: 0 solid transparent;
       &.active {
         border: none;
-        border-bottom: $brand-primary 3px solid;
-        color: $brand-primary;
+        border-bottom: 3px solid;
+        font-weight: 900;
+        color:$gray-darker;
       }
       &:hover {
         border: none;
-        border-bottom: $brand-primary 3px solid;
+        border-bottom: 3px solid;
       }
     }
     .nav-item {
@@ -203,7 +204,6 @@
   margin-bottom: $medium-space;
   position: relative;
   img {
-    @include box-shadow;
     background: white;
   }
   .layer {
@@ -356,15 +356,17 @@
   > li.thumb-container {
     display: inline;
     > .thumb {
-      @include box-shadow;
       cursor: pointer;
       margin-bottom: $small-space;
+      border:1px solid $gray-light;
       .images-container & {
         margin-right: rem(13px);
       }
-      &.selected,
+      &.selected {
+        filter:blur(2px);    
+      }
       &:hover {
-        border: $brand-primary 3px solid;
+        border:1px solid $brand-primary;
       }
     }
   }
@@ -459,6 +461,7 @@
     }
     ul li {
       margin-right: $small-space;
+      display: inline-block;
     }
     .color {
       margin-left: 0;
@@ -585,9 +588,7 @@ li.product-flag {
 }
 .social-sharing {
   width: 100%;
-  @include display(flex);
-  @include align-items(center);
-  margin-top: rem(24px);
+  text-align: right;
   ul {
     margin-bottom: 0;
   }

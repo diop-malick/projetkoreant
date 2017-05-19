@@ -76,13 +76,13 @@
         {/block}
         </div>
         <div class="col-md-6">
-          {block name='page_header_container'}
-            {block name='page_header'}
-              <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
-            {/block}
-          {/block}
-
           <div class="product-information">
+            {block name='page_header_container'}
+              {block name='page_header'}
+                <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+              {/block}
+            {/block}
+            
             {block name='product_description_short'}
               <div id="product-description-short-{$product.id}" itemprop="description">{$product.description_short nofilter}</div>
             {/block}
@@ -129,10 +129,6 @@
                     {include file='catalog/_partials/product-add-to-cart.tpl'}
                   {/block}
 
-                  {block name='product_additional_info'}
-                    {include file='catalog/_partials/product-additional-info.tpl'}
-                  {/block}
-
                   {block name='product_refresh'}
                     <input class="product-refresh ps-hidden-by-js" name="refresh" type="submit" value="{l s='Refresh' d='Shop.Theme.Actions'}">
                   {/block}
@@ -141,9 +137,6 @@
 
             </div>
 
-            {block name='hook_display_reassurance'}
-              {hook h='displayReassurance'}
-            {/block}
 
             {block name='product_tabs'}
               <div class="tabs">
@@ -210,12 +203,14 @@
                  </div>
                  {/foreach}
               </div>
-            {/block}
+            </div>
           </div>
-        </div>
+        {/block}
+        {block name='product_additional_info'}
+          {include file='catalog/_partials/product-additional-info.tpl'}
+        {/block}
       </div>
     </div>
-
     {block name='product_accessories'}
       {if $accessories}
         <section class="product-accessories clearfix">

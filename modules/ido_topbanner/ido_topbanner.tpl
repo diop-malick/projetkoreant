@@ -24,8 +24,9 @@
 *}
 
 <section class="ido-top-banner" style="background-image:url({$banner_img})">
-  <div class="ido-banner-content">
+  <div class="ido-banner-content hidden-md-up">
     <h1>{$banner_desc}</h1>
-    <a href="{$banner_link}">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
+    <a class="banner-link" href="{$banner_link}">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
+    <a class="scroll" href="javascript:void(0)"><i class="material-icons">&#xE313;</i></a>
   </div>
 </section>

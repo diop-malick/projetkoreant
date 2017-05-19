@@ -26,6 +26,6 @@
 <section class="ido-bottom-banner" style="background-image:url({$banner_img})">
   <div class="ido-banner-content">
     <h1>{$banner_desc}</h1>
-    <a href="{$banner_link}">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
+    <a class="banner-link" href="{$banner_link}">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
   </div>
 </section>

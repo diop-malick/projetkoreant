@@ -69,19 +69,21 @@ p {
 }
 .btn-primary,
 .btn-secondary {
-  @include box-shadow;
   text-transform: uppercase;
   font-weight: 600;
   padding: rem(8px) rem(20px);
   .material-icons {
     margin-right: $small-space;
   }
+  &:hover{
+    background: $brand-primary;
+    color:#fff;
+  }
 }
 .btn-tertiary {
   @extend .btn-secondary;
   text-transform: lowercase;
   color: $gray;
-  box-shadow: rem(1px) rem(1px) rem(1px) 0 rgba(0, 0, 0, 0.1);
   padding: rem(4px);
   margin: rem(4px) 0;
   font-weight: 400;

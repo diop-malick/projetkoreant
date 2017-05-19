@@ -24,16 +24,34 @@
 *}
 <div class="container">
   <section class="featured-products clearfix">
-    <h1 class="h1 products-section-title">
-      {l s='Popular Products' d='Shop.Theme.Catalog'}
-    </h1>
-    <a class="all-product-link h4" href="{$allProductsLink}">
-      {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-    </a>
+    <div class="row">
+      <div class="col-md-5">
+        <h1 class="h1 products-section-title">
+          {l s='Popular Products' d='Shop.Theme.Catalog'}
+        </h1>
+      </div>
+      <div class="col-md-3">
+         <a class="all-product-link" href="{$allProductsLink}">
+          <i class="material-icons">&#xE315;</i>{l s='All products' d='Shop.Theme.Catalog'}
+        </a>
+      </div>
+      {block name='hook_search'}
+        {hook h='displaySearch'}
+      {/block}
+    </div>
     <div class="products">
       {foreach from=$products item="product"}
         {include file="catalog/_partials/miniatures/product.tpl" product=$product}
       {/foreach}
-    </div>  
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+      </div>
+      <div class="col-md-3">
+         <a class="all-product-link" href="{$allProductsLink}">
+          <i class="material-icons">&#xE315;</i>{l s='All products' d='Shop.Theme.Catalog'}
+        </a>
+      </div>
+    </div>
   </section>
 </div>

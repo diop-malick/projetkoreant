@@ -24,8 +24,6 @@
  *}
 <div class="product-add-to-cart">
   {if !$configuration.is_catalog}
-    <span class="control-label">{l s='Quantity' d='Shop.Theme.Catalog'}</span>
-
     {block name='product_quantity'}
       <div class="product-quantity">
         <div class="qty">
@@ -48,7 +46,6 @@
               disabled
             {/if}
           >
-            <i class="material-icons shopping-cart">&#xE547;</i>
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
 
@@ -66,7 +63,6 @@
               {/if}
             </span>
           {/block}
-
         </div>
       </div>
       <div class="clearfix"></div>
@@ -84,4 +80,4 @@
       </p>
     {/block}
   {/if}
-</div>
+</div>   

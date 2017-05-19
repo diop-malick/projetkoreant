@@ -106,15 +106,15 @@ class Ido_BottomBanner extends Module implements WidgetInterface
 
             foreach ($languages as $lang) {
                 if (isset($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']])
-                    && isset($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['tmp_name'])
-                    && !empty($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['tmp_name'])) {
+                    && isset($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['bottom_banner_img'])
+                    && !empty($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['bottom_banner_img'])) {
                     if ($error = ImageManager::validateUpload($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']], 4000000)) {
                         return $error;
                     } else {
                         $ext = substr($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['name'], strrpos($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['name'], '.') + 1);
                         $file_name = md5($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['name']).'.'.$ext;
 
-                        if (!move_uploaded_file($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['tmp_name'], dirname(__FILE__).DIRECTORY_SEPARATOR.'img'.DIRECTORY_SEPARATOR.$file_name)) {
+                        if (!move_uploaded_file($_FILES['BOTTOM_BANNER_IMG_'.$lang['id_lang']]['bottom_banner_img'], dirname(__FILE__).DIRECTORY_SEPARATOR.'img'.DIRECTORY_SEPARATOR.$file_name)) {
                             return $this->displayError($this->trans('An error occurred while attempting to upload the file.', array(), 'Admin.Notifications.Error'));
                         } else {
                             if (Configuration::hasContext('BOTTOM_BANNER_IMG', $lang['id_lang'], Shop::getContext())
@@ -249,7 +249,7 @@ class Ido_BottomBanner extends Module implements WidgetInterface
         }
 
         return array(
-            'banner_link' => $BOTTOM_BANNER_link,
+            'banner_link' => $banner_link,
             'banner_desc' => Configuration::get('BOTTOM_BANNER_DESC', $this->context->language->id)
         );
     }

@@ -1,6 +1,7 @@
 .search-widget {
   text-align: center;
   @include search-box;
+  margin-bottom: 1em;
 }
 .header-top {
   .search-widget {
