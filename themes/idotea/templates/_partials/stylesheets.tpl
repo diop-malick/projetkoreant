@@ -24,6 +24,7 @@
  *}
 {foreach $stylesheets.external as $stylesheet}
   <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 {/foreach}
 
 {foreach $stylesheets.inline as $stylesheet}

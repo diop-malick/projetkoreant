@@ -1,3 +1,6 @@
+footer h3{
+  font-size: rem(32px)!important;
+}
 .block_newsletter {
   @include search-box;
   font-size: $font-size-sm;
@@ -154,7 +157,6 @@
   li a {
     color: $gray-dark;
     cursor: pointer;
-    font-size: $font-size-sm;
     &:hover {
       color: $brand-primary;
     }

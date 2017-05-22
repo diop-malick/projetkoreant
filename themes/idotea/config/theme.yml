@@ -42,6 +42,7 @@ global_settings:
       - ps_contactinfo
       - ps_categorytree
       - ps_facetedsearch
+      - blockreassurance
   hooks:
     modules_to_hook:
       displayBanner:
@@ -68,8 +69,6 @@ global_settings:
         - ps_searchbar
       displayProductAdditionalInfo:
         - ps_sharebuttons
-      displayReassurance:
-        - blockreassurance
       displayOrderConfirmation2:
         - ps_featuredproducts
       displayCrossSellingShoppingCart:

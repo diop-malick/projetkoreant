@@ -95,10 +95,7 @@
             </div>
           {/if}
         {/foreach}
-      {else}
-        <div class="col-md-6 hidden-sm-down thumbnail-banner">
 
-        </div>
       {/if}
     {/block}
     

@@ -20,6 +20,9 @@
   .manufacturer-logo {
     height: 35px;
   }
+  h1{
+    font-size: 2rem;
+  }
 }
 .input-color {
   position: absolute;
@@ -323,7 +326,7 @@
   }
   .modal-title {
     font-weight: 600;
-    color: white;
+    color: white!important;
     font-size: rem(18px);
     i.material-icons {
       margin-right: $large-space;

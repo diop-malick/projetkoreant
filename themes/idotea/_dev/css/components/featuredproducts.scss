@@ -38,20 +38,23 @@
     min-height: 510px;
     text-align: center;
     color:#FFF;
-    font-size: 125%;
+    
     h1{
-      font-size: 150%;
+      font-size: 3.25em;
       display: block;
-      padding: 3em 2em;
-      height: 10em;
+      padding: 2em 1em;
+      height: 5.9875em;
+      color: #fff !important;
     }
     a{
+      font-size: 105%;
       color:#FFF;
       border: 1px solid;
-      padding: 1em;
+      padding: 1em 2em;
       display: inline-block;
       margin: 0 auto;
       margin-top: 4.725em;
+      font-weight: 900;
       &:hover {
         color: $brand-primary;
       }
@@ -59,15 +62,17 @@
    
   }
   .products-section-title {
-    margin-top: rem(13px);
+    margin-top: rem(6px);
+    font-size: rem(32px);
     text-align: center;
+    color: #222!important;
   }
   .product-title {
     text-align: center;
     text-transform: capitalize;
   }
   .product-price-and-shipping {
-    color: $gray-darker;
+    color: #000;
     font-weight: 700;
     text-align: center;
   }
@@ -87,13 +92,14 @@
     padding: rem(5px);
     transition: bottom 300ms;
     .quick-view {
-      color: $gray-darker;
-      font-size: 125%;
+      color: #000;
+      font-size: 105%;
       border: 1px solid;
-      padding: 1em;
+      padding: 1em 2em;
       margin-top: 1em;
       margin-bottom: 2em;
       display: inline-block;
+      font-weight: 900;
       &:hover {
         color: $brand-primary;
       }
@@ -159,7 +165,7 @@
     color: $gray;
   }
   .regular-price {
-    color: $gray;
+    color: $brand-primary;
     text-decoration: line-through;
     font-size: $font-size-sm;
   }
@@ -170,11 +176,13 @@
     bottom: rem(8px);
   }
   .all-product-link {
-    color: $gray-dark;
-    font-weight: 700;
+    color: #222;
     display: block;
     text-align: center;
     margin-top: rem(17px);
+    &:hover{
+      color: $brand-primary;
+    }
   }
   .search-widget {
     text-align: right;
