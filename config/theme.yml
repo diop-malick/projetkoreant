@@ -35,14 +35,14 @@ global_settings:
     PS_BLOCK_BESTSELLERS_TO_DISPLAY: 2
   modules:
    to_enable:
-      - ido_topbanner
-      - ido_bottombanner
+      - ps_linklist
    to_disable:
       - ps_emailsubscription
       - ps_contactinfo
       - ps_categorytree
       - ps_facetedsearch
-      - blockreassurance
+      - blockreassurance # TODO - enable
+      - ps_bestsellers # cause error : Undefined index: allProductsLink
   hooks:
     modules_to_hook:
       displayBanner:
@@ -53,10 +53,9 @@ global_settings:
         - ps_customersignin
         - ps_shoppingcart
       displayHome:
-        - ido_topbanner
+        - ps_customtext
         - ps_featuredproducts
-        - ps_bestsellers
-        - ido_bottombanner
+        - ps_banner
       displayFooter:
         - ps_linklist
         - ps_customeraccountlinks
