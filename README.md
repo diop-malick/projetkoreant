@@ -17,13 +17,12 @@ The Classic Theme is the new default Theme for Prestashop 1.7 and onwards. It is
 
 ## Step 2: Install Theme
 
-
 Clone this repository under your prestashop root folder.
 
 ```bash
-# outside your PrestaShop root folder
+$ cd <PrestaShop_root_folder>
 $ cd themes
-$ git clone https://citizendiop@bitbucket.org/citizendiop/projetkoreant.git prestashop_root
+$ git clone https://citizendiop@bitbucket.org/citizendiop/projetkoreant.git idotea
 ```
 
 ### Step 3: Manage assets
@@ -137,6 +136,7 @@ Themes architecture has changed a lot since PrestaShop 1.7.
     ├── page.tpl
     ├── _partials/
     └── wrapper.tpl
+
 ```
 
 
