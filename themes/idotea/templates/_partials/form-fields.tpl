@@ -33,11 +33,7 @@
   <div class="form-group row {if !empty($field.errors)}has-error{/if}">
     <label class="col-md-3 form-control-label{if $field.required} required{/if}">
       {if $field.type !== 'checkbox'}
-<<<<<<< HEAD
         {$field.label} {if $field.required}<span class="required_field">*</span>{/if}
-=======
-        {$field.label}
->>>>>>> b29cd7f419e741fdc15963f3906ea00107a424c5
       {/if}
     </label>
     <div class="col-md-6{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
@@ -78,11 +74,7 @@
                   name="{$field.name}"
                   type="radio"
                   value="{$value}"
-<<<<<<< HEAD
                   {if $field.required}required data-errormessage-value-missing="{l s='Veuillez renseigner la civilité.' d='Shop.Forms.Errors' }" x-moz-errormessage="{l s='Veuillez renseigner la civilité.' d='Shop.Forms.Errors' }" {/if}
-=======
-                  {if $field.required}required{/if}
->>>>>>> b29cd7f419e741fdc15963f3906ea00107a424c5
                   {if $value eq $field.value} checked {/if}
                 >
                 <span></span>
@@ -145,11 +137,7 @@
               type="password"
               value=""
               pattern=".{literal}{{/literal}5,{literal}}{/literal}"
-<<<<<<< HEAD
               {if $field.required}required data-errormessage-value-missing="{l s='Veuillez renseigner un mot de passe.' d='Shop.Forms.Errors' }" x-moz-errormessage="{l s='Veuillez renseigner un mot de passe.' d='Shop.Forms.Errors' }"{/if}
-=======
-              {if $field.required}required{/if}
->>>>>>> b29cd7f419e741fdc15963f3906ea00107a424c5
             >
             <span class="input-group-btn">
               <button
@@ -166,8 +154,6 @@
         {/block}
 
       {else}
-
-<<<<<<< HEAD
         {if $field.name=="firstname"}
           {assign var="error_message" value="Veuillez renseigner le prénom."}
         {elseif  $field.name=="lastname"}
@@ -177,9 +163,6 @@
         {else}
           {assign var="error_message" value=""}
         {/if}
-
-=======
->>>>>>> b29cd7f419e741fdc15963f3906ea00107a424c5
         {block name='form_field_item_other'}
           <input
             class="form-control"
@@ -188,11 +171,7 @@
             value="{$field.value}"
             {if isset($field.availableValues.placeholder)}placeholder="{$field.availableValues.placeholder}"{/if}
             {if $field.maxLength}maxlength="{$field.maxLength}"{/if}
-<<<<<<< HEAD
             {if $field.required}required data-errormessage-value-missing="{l s=$error_message d='Shop.Forms.Errors' }" x-moz-errormessage="{l s=$error_message d='Shop.Forms.Errors' }" {/if}
-=======
-            {if $field.required}required{/if}
->>>>>>> b29cd7f419e741fdc15963f3906ea00107a424c5
           >
           {if isset($field.availableValues.comment)}
             <span class="form-control-comment">

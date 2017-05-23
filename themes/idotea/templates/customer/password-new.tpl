@@ -31,7 +31,6 @@
 {block name='page_content'}
     <form action="{$urls.pages.password}" method="post">
 
-<<<<<<< HEAD
       <ul class="ps-alert-error">
         {foreach $errors as $error}
           <li class="item">
@@ -45,8 +44,6 @@
         {/foreach}
       </ul>
 
-=======
->>>>>>> b29cd7f419e741fdc15963f3906ea00107a424c5
       <section class="form-fields renew-password">
 
         <div class="email">

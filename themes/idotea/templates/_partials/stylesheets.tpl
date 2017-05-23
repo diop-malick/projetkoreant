@@ -24,10 +24,7 @@
  *}
 {foreach $stylesheets.external as $stylesheet}
   <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
-<<<<<<< HEAD
-=======
   <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
->>>>>>> b29cd7f419e741fdc15963f3906ea00107a424c5
 {/foreach}
 
 {foreach $stylesheets.inline as $stylesheet}
