@@ -4,6 +4,10 @@
 #products,.featured-products,.product-accessories,.product-miniature  {
   display: block;
   width: 100%;
+  .no-gutter{
+    text-align: right;
+    padding-right: 0.8125em;
+  }
   .products {
     @include display(flex);
     @include flex-wrap(wrap);
@@ -17,7 +21,6 @@
   }
   .thumbnail-container {
     position: relative;
-    padding: 0 5%;
     text-align: center;
     background: white;
     &:hover {
@@ -64,7 +67,7 @@
   .products-section-title {
     margin-top: rem(6px);
     font-size: rem(32px);
-    text-align: center;
+    text-align: left;
     color: #222!important;
   }
   .product-title {
@@ -177,9 +180,9 @@
   }
   .all-product-link {
     color: #222;
-    display: block;
-    text-align: center;
+    display: inline-block;
     margin-top: rem(17px);
+    text-indent: -0.203125em;
     &:hover{
       color: $brand-primary;
     }
@@ -192,6 +195,13 @@
 
 @include media-breakpoint-up(md) {
   #products,.featured-products,.product-accessories,.product-miniature  {
+    .no-gutter{
+      text-align: left;
+      padding-right: 0;
+    }
+    .all-product-link {
+      text-align: left;
+    }
     .product-miniature {
       &:nth-of-type(even) .thumbnail-container{
         float: right;

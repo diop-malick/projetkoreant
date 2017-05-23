@@ -25,12 +25,12 @@
 <div class="container">
   <section class="featured-products clearfix">
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-6">
         <h1 class="h1 products-section-title">
           {l s='Best Sellers' d='Shop.Theme.Catalog'}
         </h1>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-lg-2 no-gutter">
          <a class="all-product-link" href="{$allProductsLink}">
           <i class="material-icons">&#xE315;</i>{l s='All best sellers' d='Shop.Theme.Catalog'}
         </a>
@@ -42,9 +42,9 @@
       {/foreach}
     </div>
     <div class="row">
-      <div class="col-md-5">
+      <div class="col-md-6">
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-lg-2 no-gutter">
          <a class="all-product-link" href="{$allProductsLink}">
           <i class="material-icons">&#xE315;</i>{l s='All best sellers' d='Shop.Theme.Catalog'}
         </a>
