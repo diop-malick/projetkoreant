@@ -22,10 +22,13 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<a class="banner hidden-sm-down" href="{$banner_link}" title="{$banner_desc}">
-  {if isset($banner_img)}
-    <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
-  {else}
-    <span>{$banner_desc}</span>
-  {/if}
-</a>
+{if isset($banner_img)}
+<section class="ido-bottom-banner" style="background-image:linear-gradient(rgba(100,100,100,0.325),rgba(100,100,100,0.325),rgba(100,100,100,0.325)),url({$banner_img})">
+  <div class="ido-banner-content">
+    <h1>{$banner_desc}</h1>
+    <a class="banner-link" href="{$banner_link}">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
+  </div>
+</section>
+{/if}
+
+{* TODO - move style code in Extarnal style sheet *}
