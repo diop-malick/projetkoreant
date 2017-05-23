@@ -301,7 +301,7 @@
         font-size: $base-font-size;
         font-weight: 700;
         text-transform: uppercase;
-        color: $gray-dark;
+        color: $gray-darker;
         padding: 0 rem(15px);
         margin-bottom: rem(30px);
         span.link-item {
@@ -317,9 +317,9 @@
           padding-bottom: 3.4rem;
         }
         &:hover {
-          color: $gray-darker;
+          color: #000;
           i {
-            color: $brand-primary;
+            color: #000;
           }
         }
       }

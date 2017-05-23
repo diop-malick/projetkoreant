@@ -22,8 +22,8 @@ body#checkout {
       margin-top: rem(3px);
     }
   }
-  a:hover {
-    color: #1a8196;
+  a{
+    text-decoration: underline;
   }
   section#content {
     margin-bottom: rem(25px);
@@ -40,6 +40,7 @@ body#checkout {
       text-transform: uppercase;
       cursor: pointer;
       margin-bottom: 0;
+      color: #000!important;
     }
     .content {
       padding: 0 rem(37px);
@@ -90,7 +91,9 @@ body#checkout {
           display: block;
           float: right;
           margin-right: rem(2px);
-          color: $gray;
+          &:hover{
+            color: $brand-primary;
+          }
         }
       }
       .content {
@@ -156,7 +159,7 @@ body#checkout {
       margin-bottom: $small-space;
       &.selected {
         background: white;
-        border: $brand-primary 3px solid;
+        border: #000 3px solid;
       }
     }
     .address-alias {
@@ -181,7 +184,6 @@ body#checkout {
     }
     .delete-address,
     .edit-address {
-      color: $gray;
       display: inline-block;
       margin: 0 rem(5px);
       .delete,
