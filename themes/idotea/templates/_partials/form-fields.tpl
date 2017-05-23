@@ -156,12 +156,19 @@
         {/block}
 
       {else}
+              {* {$field.name|var_dump} *}
         {if $field.name=="firstname"}
           {assign var="error_message" value="Veuillez renseigner le prénom."}
         {elseif  $field.name=="lastname"}
           {assign var="error_message" value="Veuillez renseigner le nom."}
         {elseif $field.name=="email"}
           {assign var="error_message" value="Veuillez renseigner une adresse email."}
+        {elseif $field.name=="address1"}
+          {assign var="error_message" value="Veuillez renseigner une adresse."}
+        {elseif $field.name=="postcode"}
+          {assign var="error_message" value="Veuillez renseigner un code postal."}
+        {elseif $field.name=="city"}
+          {assign var="error_message" value="Veuillez renseigner une ville."}
         {else}
           {assign var="error_message" value=""}
         {/if}
