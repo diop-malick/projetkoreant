@@ -74,7 +74,8 @@
                   name="{$field.name}"
                   type="radio"
                   value="{$value}"
-                  {if $field.required}required data-errormessage-value-missing="{l s='Veuillez renseigner la civilité.' d='Shop.Forms.Errors' }" x-moz-errormessage="{l s='Veuillez renseigner la civilité.' d='Shop.Forms.Errors' }" {/if}
+                  {if $field.required}required oninvalid="this.setCustomValidity('{l s='Veuillez renseigner la civilité.' d='Shop.Forms.Errors' }')"
+    oninput="setCustomValidity('')" x-moz-errormessage="{l s='Veuillez renseigner la civilité.' d='Shop.Forms.Errors' }" {/if}
                   {if $value eq $field.value} checked {/if}
                 >
                 <span></span>
@@ -137,7 +138,8 @@
               type="password"
               value=""
               pattern=".{literal}{{/literal}5,{literal}}{/literal}"
-              {if $field.required}required data-errormessage-value-missing="{l s='Veuillez renseigner un mot de passe.' d='Shop.Forms.Errors' }" x-moz-errormessage="{l s='Veuillez renseigner un mot de passe.' d='Shop.Forms.Errors' }"{/if}
+              {if $field.required}required oninvalid="this.setCustomValidity('{l s='Veuillez renseigner un mot de passe.' d='Shop.Forms.Errors' }')"
+    oninput="setCustomValidity('')" x-moz-errormessage="{l s='Veuillez renseigner un mot de passe.' d='Shop.Forms.Errors' }"{/if}
             >
             <span class="input-group-btn">
               <button
@@ -154,12 +156,19 @@
         {/block}
 
       {else}
+              {* {$field.name|var_dump} *}
         {if $field.name=="firstname"}
           {assign var="error_message" value="Veuillez renseigner le prénom."}
         {elseif  $field.name=="lastname"}
           {assign var="error_message" value="Veuillez renseigner le nom."}
         {elseif $field.name=="email"}
           {assign var="error_message" value="Veuillez renseigner une adresse email."}
+        {elseif $field.name=="address1"}
+          {assign var="error_message" value="Veuillez renseigner une adresse."}
+        {elseif $field.name=="postcode"}
+          {assign var="error_message" value="Veuillez renseigner un code postal."}
+        {elseif $field.name=="city"}
+          {assign var="error_message" value="Veuillez renseigner une ville."}
         {else}
           {assign var="error_message" value=""}
         {/if}
@@ -171,7 +180,8 @@
             value="{$field.value}"
             {if isset($field.availableValues.placeholder)}placeholder="{$field.availableValues.placeholder}"{/if}
             {if $field.maxLength}maxlength="{$field.maxLength}"{/if}
-            {if $field.required}required data-errormessage-value-missing="{l s=$error_message d='Shop.Forms.Errors' }" x-moz-errormessage="{l s=$error_message d='Shop.Forms.Errors' }" {/if}
+            {if $field.required}required oninvalid="this.setCustomValidity('{l s=$error_message d='Shop.Forms.Errors' }')"
+    oninput="setCustomValidity('')" data-errormessage-value-missing="{l s=$error_message d='Shop.Forms.Errors' }" x-moz-errormessage="{l s=$error_message d='Shop.Forms.Errors' }" {/if}
           >
           {if isset($field.availableValues.comment)}
             <span class="form-control-comment">
