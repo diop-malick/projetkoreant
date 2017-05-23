@@ -1,22 +1,26 @@
-#custom-text {
-  background: white;
-  border-radius: 2px;
-  margin-bottom: rem(24px);
-  padding: rem(50px) rem(50px);
-  text-align: center;
-  h3 {
-    text-transform: uppercase;
-    color: $gray-darker;
-    font-size: rem(25px);
-    font-weight: 700;
-  }
-  p {
-    color: $gray-darker;
-    font-weight: 400;
-    font-size: 1.1em;
-    .dark {
-      color: $gray;
+.ido-top-banner {
+  background: url(../img/banner.png);
+  #custom-text {
+    background-size: cover;
+    margin-bottom: rem(24px);
+    padding: rem(50px) rem(50px);
+    h3 {
+      text-transform: uppercase;
+      color: $gray-darker;
+      font-size: rem(25px);
+      font-weight: 700;
+    }
+    p {
+      color: $gray-darker;
       font-weight: 400;
+      font-size: 1.1em;
+      .dark {
+        color: $gray;
+        font-weight: 400;
+      }
+    }
+    a {
+      color: white;
     }
   }
 }

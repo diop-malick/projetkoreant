@@ -23,6 +23,8 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 
-<div id="custom-text">
-  {$cms_infos.text nofilter}
-</div>
+<section class="ido-top-banner">
+  <div id="custom-text">
+    {$cms_infos.text nofilter}
+  </div>
+</section>
