@@ -42,7 +42,6 @@ global_settings:
       - ps_categorytree
       - ps_facetedsearch
       - blockreassurance # TODO - enable
-      
   hooks:
     modules_to_hook:
       displayBanner:
