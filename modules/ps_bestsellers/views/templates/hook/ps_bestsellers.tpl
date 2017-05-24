@@ -31,7 +31,7 @@
         </h1>
       </div>
       <div class="col-md-3 col-lg-2 no-gutter">
-         <a class="all-product-link" href="{$allProductsLink}">
+         <a class="all-product-link" href="{$allBestSellers}">
           <i class="material-icons">&#xE315;</i>{l s='All best sellers' d='Shop.Theme.Catalog'}
         </a>
       </div>
@@ -45,7 +45,7 @@
       <div class="col-md-6">
       </div>
       <div class="col-md-3 col-lg-2 no-gutter">
-         <a class="all-product-link" href="{$allProductsLink}">
+         <a class="all-product-link" href="{$allBestSellers}">
           <i class="material-icons">&#xE315;</i>{l s='All best sellers' d='Shop.Theme.Catalog'}
         </a>
       </div>
