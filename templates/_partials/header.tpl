@@ -24,7 +24,9 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    {hook h='displayBanner'}
+    <div class="container text-md-right">
+      {hook h='displayBanner'}
+    </div>
   </div>
 {/block}
 
