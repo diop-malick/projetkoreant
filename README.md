@@ -25,6 +25,13 @@ $ cd themes
 $ git clone https://citizendiop@bitbucket.org/citizendiop/projetkoreant.git idotea
 ```
 
+
+### TOp banner
+
+Copy code from idotea/modules/ps_customertext/file.html to back office module "Bloc de texte personalisé"
+
+### Error : disable module bestellers
+
 ### Step 3: Manage assets
 
 The Theme contains the development files in the `_dev` folder.
