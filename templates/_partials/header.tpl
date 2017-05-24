@@ -24,7 +24,7 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    <div class="container text-md-right">
+    <div class="container text-md-right no-gutter">
       {hook h='displayBanner'}
     </div>
   </div>
@@ -68,6 +68,9 @@
         <div class="col-md-10 col-sm-12">
           <div class="row">
             {hook h='displayTop'}
+            <div class="col-md-3 no-gutter hidden-sm-down user-cart">
+              {hook h='displayUserInfo'}
+            </div>
           </div>
         </div>
       </div>

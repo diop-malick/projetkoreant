@@ -43,12 +43,14 @@ global_settings:
       - ps_facetedsearch
       - blockreassurance # TODO - enable
   hooks:
+  
     modules_to_hook:
       displayBanner:
         - ps_currencyselector
         - ps_languageselector
       displayTop:
         - ps_mainmenu
+      displayUserInfo:
         - ps_customersignin
         - ps_shoppingcart
       displayHome:
