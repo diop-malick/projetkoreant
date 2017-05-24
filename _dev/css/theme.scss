@@ -129,8 +129,13 @@
         content:">";
       }
     }
-    .user-info{
-      text-align: right;
+    .user-cart{
+      border: 1px solid $gray;
+      padding: 0.8125em .40625em;
+      margin-top: -1.40625em;
+      .no-gutter{
+        text-align: right;
+      }
     }
     @include cart-preview;
   }

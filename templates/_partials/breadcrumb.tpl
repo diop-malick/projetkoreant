@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <nav data-depth="{$breadcrumb.count}" class="breadcrumb hidden-sm-down">
-  <div class="container">
+  <div class="container no-gutter">
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
       {foreach from=$breadcrumb.links item=path name=breadcrumb}
         {block name='breadcrumb_item'}
