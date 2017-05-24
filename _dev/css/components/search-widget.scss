@@ -5,7 +5,9 @@
 }
 .header-top {
   .search-widget {
+    display: block!important;
     form {
+      display: block;
       input[type="text"] {
         min-width: inherit;
         width: 100%;

@@ -25,6 +25,9 @@
 <div class="container">
   <section class="featured-products clearfix">
     <div class="row">
+      {block name='hook_search'}
+        {hook h='displaySearch'}
+      {/block}
       <div class="col-md-6">
         <h1 class="h1 products-section-title">
           {l s='Popular Products' d='Shop.Theme.Catalog'}
@@ -35,9 +38,6 @@
           <i class="material-icons">&#xE315;</i>{l s='All products' d='Shop.Theme.Catalog'}
         </a>
       </div>
-      {block name='hook_search'}
-        {hook h='displaySearch'}
-      {/block}
     </div>
     <div class="products">
       {foreach from=$products item="product"}
