@@ -308,7 +308,8 @@
 #blockcart-modal {
   color: $gray-darker;
   .modal-header {
-    background: $brand-success;
+    /* background: $brand-success; */
+    background: $brand-primary;
   }
   .modal-body {
     background: $gray-light;
