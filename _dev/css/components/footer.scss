@@ -56,13 +56,14 @@ footer h3{
 .block-social li {
   height: rem(40px);
   width: rem(40px);
-  background-color: $gray-light;
+  background-color: $gray-darker;
   background-repeat: no-repeat;
   display: inline-block;
-  margin: rem(2px);
+  margin: rem(10px);
   cursor: pointer;
+  border-radius: 50%;
   &:hover {
-    background-color: $brand-primary;
+    background-color: $gray;
   }
   a {
     display: block;
