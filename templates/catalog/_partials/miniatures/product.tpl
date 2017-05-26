@@ -86,7 +86,7 @@
       {if $product.images|@count > 1} 
         {foreach from=$product.images item=image}
           {if $image.id_image != $product.cover.id_image}
-            <div class="col-md-6 hidden-sm-down thumbnail-banner" style="background-image:linear-gradient(rgba(20,20,20,0.075),rgba(20,20,20,0.125),rgba(20,20,20,0.075)),url({$image.bySize.list_default.url})">
+            <div class="col-md-6 hidden-sm-down thumbnail-banner" style="background-image:linear-gradient(rgba(20,20,20,0.375),rgba(20,20,20,0.3),rgba(20,20,20,0.425)),url({$image.bySize.list_default.url})">
               {block name='product_name'}
                 <h1 class="product-title" itemprop="name">{$product.name|truncate:30:'...'}</h1>
               {/block}

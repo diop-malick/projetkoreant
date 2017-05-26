@@ -136,6 +136,11 @@
       .no-gutter{
         text-align: right;
       }
+      .user-info {
+        .account {
+          display: block;
+        }
+      }
     }
     @include cart-preview;
   }
@@ -180,7 +185,7 @@
         color: $gray-dark;
         margin: 0;
         &::after {
-          content: "";
+          display: none;
         }
         a {
           color: $gray-darker;

@@ -77,6 +77,11 @@
         </div>
         <div class="col-md-6">
           <div class="product-information">
+
+            {block name='product_thumbnail'}
+                <img src = "{$product.cover.bySize.home_default.url}" alt = "{$product.cover.legend}">
+            {/block}
+
             {block name='page_header_container'}
               {block name='page_header'}
                 <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
@@ -100,9 +105,6 @@
                   <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                   <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">
 
-                  {block name='product_variants'}
-                    {include file='catalog/_partials/product-variants.tpl'}
-                  {/block}
 
                   {block name='product_pack'}
                     {if $packItems}
@@ -123,6 +125,10 @@
 
                   {block name='product_prices'}
                     {include file='catalog/_partials/product-prices.tpl'}
+                  {/block}
+
+                  {block name='product_variants'}
+                    {include file='catalog/_partials/product-variants.tpl'}
                   {/block}
 
                   {block name='product_add_to_cart'}

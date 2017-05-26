@@ -2,6 +2,13 @@
   &[data-depth="1"] {
     margin: rem(10px);
   }
+  a{
+    &:hover,&.active {
+      color: $brand-primary!important;
+      text-decoration: none;
+      background: #fff;
+    }
+  }
   a:not([data-depth="0"]) {
     display: block;
     padding: rem(10px);
@@ -16,13 +23,6 @@
     font-weight: 600;
     padding: rem(2px) $small-space rem(6px);
     color: $gray-darker;
-    &:hover,&.active {
-      #header & {
-        color: $brand-primary;
-        text-decoration: none;
-        background: #fff;
-      }
-    }
   }
   a[data-depth="1"],
   a[data-depth="2"] {
