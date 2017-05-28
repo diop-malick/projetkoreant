@@ -24,7 +24,9 @@
 *}
 
 <section class="ido-top-banner">
+<div class="container">
   <div id="custom-text">
     {$cms_infos.text nofilter}
   </div>
+</div>
 </section>
