@@ -308,7 +308,6 @@
   color: $gray-darker;
   .modal-header {
     /* background: $brand-success; */
-    background: $brand-primary;
   }
   .modal-body {
     background: $gray-light;
@@ -327,7 +326,7 @@
   }
   .modal-title {
     font-weight: 600;
-    color: white!important;
+    color: $brand-success !important;
     font-size: rem(18px);
     i.material-icons {
       margin-right: $large-space;
