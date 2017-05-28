@@ -36,7 +36,10 @@ global_settings:
   modules:
    to_enable:
       - ps_linklist
+      - ps_featuredproducts_2
+      - ps_featuredproducts_3
    to_disable:
+      - ps_currencyselector
       - ps_emailsubscription
       - ps_contactinfo
       - ps_categorytree
@@ -46,7 +49,6 @@ global_settings:
   
     modules_to_hook:
       displayBanner:
-        - ps_currencyselector
         - ps_languageselector
       displayTop:
         - ps_mainmenu
@@ -56,6 +58,8 @@ global_settings:
       displayHome:
         - ps_customtext
         - ps_featuredproducts
+        - ps_featuredproducts_2
+        - ps_featuredproducts_3
         - ps_banner
       displayFooter:
         - ps_linklist
