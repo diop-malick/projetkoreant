@@ -15,6 +15,14 @@ The Classic Theme is the new default Theme for Prestashop 1.7 and onwards. It is
 - install Prestashop
 
 
+### clone modules
+
+Clone the forked & custom ps_featuresproducts module to your local machine in the /modules directory of your PrestaShop installation.
+
+> git clone https://citizendiop@bitbucket.org/citizendiop/ps_featuredproducts_3.git
+> git clone https://citizendiop@bitbucket.org/citizendiop/ps_featuredproducts_3.git
+
+
 ## Step 2: Install Theme
 
 Clone this repository under your prestashop root folder.
