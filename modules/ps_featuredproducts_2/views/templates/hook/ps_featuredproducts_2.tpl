@@ -23,7 +23,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div class="container">
-  <section class="featured-products clearfix">
+  <section class="featured-products list-inverted clearfix">
     <div class="row">
       <div class="col-md-6">
         <h1 class="h1 products-section-title">

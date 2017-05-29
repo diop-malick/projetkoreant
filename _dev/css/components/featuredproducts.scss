@@ -205,6 +205,16 @@
       }
     }
   }
+  .featured-products.list-inverted{
+    .product-miniature {
+      &:nth-of-type(odd) .thumbnail-container{
+        float: right;
+      }
+      &:nth-of-type(even) .thumbnail-container{
+        float: left;
+      }
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {
