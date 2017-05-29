@@ -36,6 +36,15 @@
       {/block}
 
         <div class="product-description">
+
+          {block name='product_name'}
+            <h1 class="product-title hidden-md-up" itemprop="name">{$product.name|truncate:30:'...'}</h1>
+          {/block}
+
+          {block name='product_description_short'}
+            <div id="product-description-short" class="hidden-md-up" itemprop="description">{$product.description_short nofilter}</div>
+          {/block}
+
           {block name='product_price_and_shipping'}
             {if $product.show_price}
               <div class="product-price-and-shipping">
@@ -60,7 +69,7 @@
         {/block}
 
         {block name='product_description_short'}
-          <div id="product-description-short" itemprop="description">{$product.description_short nofilter}</div>
+          <div id="product-description-short" class="hidden-sm-down" itemprop="description">{$product.description_short nofilter}</div>
         {/block}
 
         {block name='product_reviews'}

@@ -98,10 +98,11 @@
       color: #000;
       font-size: 105%;
       border: 1px solid;
-      padding: 1em 2em;
+      padding: 0.8125em;
       margin-top: 1em;
       display: inline-block;
       font-weight: 900;
+      font-size: 80%;
       &:hover {
         color: $brand-primary;
       }
@@ -112,7 +113,7 @@
     z-index: 1;
     background: white;
     margin-top: 1em;
-    height: 7em;
+    padding: 0 1.5em;
   }
   img {
     margin-left: 4px;
@@ -190,6 +191,17 @@
   }
 }
 
+@include media-breakpoint-up(sm) {
+   #products,.featured-products,.product-accessories,.product-miniature  {
+    .highlighted-informations {
+      .quick-view {
+        padding: 1em 2em;
+        font-size: 100%;
+      }
+    }
+  }
+}
+
 @include media-breakpoint-up(md) {
   #products,.featured-products,.product-accessories,.product-miniature  {
     .no-gutter{
@@ -203,6 +215,9 @@
       &:nth-of-type(even) .thumbnail-container{
         float: right;
       }
+    }
+    .product-description,#product-description-short{
+      height: 7em;
     }
   }
   .featured-products.list-inverted{
