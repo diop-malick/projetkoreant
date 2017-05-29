@@ -24,7 +24,7 @@
 *}
 
 <section class="ido-top-banner">
-<div class="container">
+<div class="container no-gutter">
   <div id="custom-text">
     {$cms_infos.text nofilter}
   </div>
