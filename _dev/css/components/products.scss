@@ -179,6 +179,7 @@
 .product-accordion-header{
   border: 1px solid;
   padding: 0.8125em 1.625em;
+  margin-bottom: 0.40625em;
   cursor: pointer;
   p{
     font-weight: 900;
@@ -195,7 +196,7 @@
   }
 }
 .product-accordion-content{
-  padding: 1.625em;
+  padding: 0.8125em;
 }
 .product-cover {
   margin-bottom: $medium-space;
@@ -450,7 +451,7 @@
 }
 .product-variants {
   > .product-variants-item {
-    margin: 0 0 $medium-space 0;
+    margin: 0;
     select {
       border: 1px solid $gray-light;
       height: rem(40px);

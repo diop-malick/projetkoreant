@@ -51,7 +51,7 @@
     <meta itemprop="url" content="{$product.url}">
 
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 hidden-sm-down">
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
@@ -148,19 +148,19 @@
               <div class="product-accordion">
                 {if $product.description}
                   {block name='product_description'}                 
-                    <div class="product-accordion-header" data-toggle="collapse" data-target="#product-description" aria-expanded="true">
+                    <div class="product-accordion-header" data-toggle="collapse" data-target="#product-accordion-description" aria-expanded="true">
                       <p>{l s='Description' d='Shop.Theme.Catalog'}</p>
                     </div>
-                    <div class="product-accordion-content collapse in" id="product-description" aria-expanded="true">
+                    <div class="product-accordion-content collapse in" id="product-accordion-description" aria-expanded="true">
                       {$product.description nofilter}
                     </div>
                   {/block}
                 {/if}
                 {block name='product_details'}
-                  <div class="product-accordion-header" data-toggle="collapse" data-target="#product-details" aria-expanded="false">
+                  <div class="product-accordion-header" data-toggle="collapse" data-target="#product-accordion-details" aria-expanded="false">
                     <p>{l s='Product Details' d='Shop.Theme.Catalog'}</p>
                   </div>
-                  <div class="product-accordion-content collapse" id="product-details" aria-expanded="false">
+                  <div class="product-accordion-content collapse" id="product-accordion-details" aria-expanded="false">
                     {include file='catalog/_partials/product-details.tpl'}
                   </div>                
                 {/block}

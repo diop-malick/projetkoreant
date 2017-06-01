@@ -55,18 +55,16 @@
         .cart-icon{
           background-image: url(../img/cart.png);
         }
+        &:hover {
+        color: $brand-primary;
+          .cart-icon{
+            background-image: url(../img/cart-active.png);
+          }
+        }  
       } 
     }
     .shopping-cart {
       vertical-align: middle;
-    }
-    a{
-      &:hover {
-        color: $brand-primary;
-        .cart-icon{
-          background-image: url(../img/cart-active.png);
-        }
-      }      
     }
     .body {
       display: none;
