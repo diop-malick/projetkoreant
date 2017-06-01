@@ -32,7 +32,7 @@
       </div>
       <div class="col-md-3 col-lg-2 no-gutter" >
          <a class="all-product-link" href="{$allProductsLink}">
-          <i class="material-icons">&#xE315;</i>{l s='All products' d='Shop.Theme.Catalog'}
+          <i class="material-icons">&#xE315;</i>{l s='All our snack' d='Shop.Theme.Catalog'}
         </a>
       </div>
     </div>
@@ -46,7 +46,7 @@
       </div>
       <div class="col-md-3 col-lg-2 no-gutter">
          <a class="all-product-link" href="{$allProductsLink}">
-          <i class="material-icons">&#xE315;</i>{l s='All products' d='Shop.Theme.Catalog'}
+          <i class="material-icons">&#xE315;</i>{l s='All our snack' d='Shop.Theme.Catalog'}
         </a>
       </div>
     </div>

@@ -15,6 +15,7 @@ body {
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   color: #222;
   line-height: 1.25em;
   overflow-x: hidden;
