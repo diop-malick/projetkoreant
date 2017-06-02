@@ -84,10 +84,15 @@
   .scroll{
     display: block;
     position: relative;
-    bottom: -2em;
+    bottom: -4em;
     margin-bottom: 1em;
     .material-icons{
       font-size: 350%;
+      color: #fff;
+      cursor: pointer;
+      &:hover{
+        color: $brand-primary;
+      }
     }
   }
 }
