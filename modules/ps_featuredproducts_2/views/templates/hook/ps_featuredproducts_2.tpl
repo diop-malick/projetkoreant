@@ -27,12 +27,12 @@
     <div class="row">
       <div class="col-md-6">
         <h1 class="h1 products-section-title">
-          {l s='Our Accesories' d='Shop.Theme.Catalog'}
+          {l s='Our Accessories' d='Shop.Theme.Catalog'}
         </h1>
       </div>
       <div class="col-md-6 col-xl-2 no-gutter">
          <a class="all-product-link" href="{$allProductsLink}">
-          <i class="material-icons">&#xE315;</i>{l s='All accesories' d='Shop.Theme.Catalog'}
+          <i class="material-icons">&#xE315;</i>{l s='All accessories' d='Shop.Theme.Catalog'}
         </a>
       </div>
     </div>
