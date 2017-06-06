@@ -194,7 +194,7 @@
 @include media-breakpoint-up(sm) {
    #products,.featured-products,.product-accessories,.product-miniature  {
     .highlighted-informations {
-      .quick-view {
+      .quick-view,.all-view {
         padding: 1em 2em;
         font-size: 100%;
         min-width: 14em;
