@@ -31,8 +31,10 @@
 
 .page-not-found {
   .search-widget {
+    width: 100%!important;
+    display: block!important;
     form {
-      display: inline-block;
+      display: block!important;
     }
   }
 }

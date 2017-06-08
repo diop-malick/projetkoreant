@@ -33,7 +33,7 @@
           {l s='Popular Products' d='Shop.Theme.Catalog'}
         </h1>
       </div>
-      <div class="col-md-3 col-lg-2 no-gutter" >
+      <div class="col-md-6 col-xl-2 no-gutter">
          <a class="all-product-link" href="{$allProductsLink}">
           <i class="material-icons">&#xE315;</i>{l s='All products' d='Shop.Theme.Catalog'}
         </a>
@@ -45,9 +45,7 @@
       {/foreach}
     </div>
     <div class="row">
-      <div class="col-md-6">
-      </div>
-      <div class="col-md-3 col-lg-2 no-gutter">
+      <div class="col-md-6 offset-md-6 no-gutter">
          <a class="all-product-link" href="{$allProductsLink}">
           <i class="material-icons">&#xE315;</i>{l s='All products' d='Shop.Theme.Catalog'}
         </a>

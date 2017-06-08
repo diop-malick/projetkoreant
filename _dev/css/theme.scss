@@ -40,6 +40,7 @@
     &:hover {
       text-decoration: none;
       color: $brand-primary;
+      background: transparent;
     }
   }
   .header-banner{
@@ -117,7 +118,6 @@
           float: left;
         }
       }
-      padding-left: 15px;
       margin-bottom: rem(6px);
       margin-top: -0.125em;
       margin-left: -3em;
@@ -168,6 +168,7 @@
     background: $gray-light;
     padding: 1em 0;
     text-align: right;
+    margin-bottom: 0.8125em;
     &[data-depth="1"] {
       display: none;
     }

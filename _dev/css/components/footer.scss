@@ -53,13 +53,12 @@ footer h3{
 .block-social {
   text-align: right;
 }
-.block-social li {
+.block-social li,.social-sharing li {
   height: rem(40px);
   width: rem(40px);
   background-color: #ccc;
   background-repeat: no-repeat;
   display: inline-block;
-  margin: rem(8px) rem(20px);
   cursor: pointer;
   border-radius: 50%;
   &:hover {
@@ -76,31 +75,14 @@ footer h3{
     }
   }
 }
+.block-social li{
+  margin: rem(8px) rem(20px);
+}
 .facebook {
   background-image: url(../img/facebook.svg);
-  &::before{
-    content:"";
-    background-image: url(../img/facebook-blue.svg);
-  }
-  &.icon-gray {
-    background-image: url(../img/facebook-gray.svg);
-    &:hover {
-      background-image: url(../img/facebook-blue.svg);
-    }
-  }
 }
 .twitter {
   background-image: url(../img/twitter.svg);
-  &::before{
-    content:"";
-    background-image: url(../img/twitter-blue.svg);
-  }
-  &.icon-gray {
-    background-image: url(../img/twitter-gray.svg);
-    &:hover {
-      background-image: url(../img/twitter-blue.svg);
-    }
-  }
 }
 .rss {
   background-image: url(../img/rss.svg);
@@ -110,16 +92,6 @@ footer h3{
 }
 .googleplus {
   background-image: url(../img/gplus.svg);
-  &::before{
-    content:"";
-    background-image: url(../img/gplus-blue.svg);
-  }
-  &.icon-gray {
-    background-image: url(../img/gplus-gray.svg);
-    &:hover {
-      background-image: url(../img/gplus-blue.svg);
-    }
-  }
 }
 #block_myaccount_infos{
   .myaccount-title a{
@@ -128,16 +100,6 @@ footer h3{
 }
 .pinterest {
   background-image: url(../img/pinterest.svg);
-  &::before{
-    content:"";
-    background-image: url(../img/pinterest-blue.svg);
-  }
-  &.icon-gray {
-    background-image: url(../img/pinterest-gray.svg);
-    &:hover {
-      background-image: url(../img/pinterest-blue.svg);
-    }
-  }
 }
 .vimeo {
   background-image: url(../img/vimeo.svg);

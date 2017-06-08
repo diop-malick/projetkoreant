@@ -86,7 +86,7 @@
       {/block}
 
       <div class="highlighted-informations{if !$product.main_variants} no-variants{/if}">
-        <a href="{$product.url}" class="quick-view hidden-md-up">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
+        <a href="{$product.url}" class="all-view hidden-md-up">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
         {block name='quick_view'}
           <a class="quick-view" href="#" data-link-action="quickview">{l s='ADD TO CART' d='Shop.Theme.Actions'}</a>
         {/block}        

@@ -94,7 +94,7 @@
     text-align: center;
     padding: rem(5px);
     transition: bottom 300ms;
-    .quick-view {
+    .quick-view,.all-view{
       color: #000;
       font-size: 105%;
       border: 1px solid;
@@ -187,14 +187,14 @@
     }
   }
   .search-widget {
-    text-align: left;
+    text-align: right;
   }
 }
 
 @include media-breakpoint-up(sm) {
    #products,.featured-products,.product-accessories,.product-miniature  {
     .highlighted-informations {
-      .quick-view {
+      .quick-view,.all-view {
         padding: 1em 2em;
         font-size: 100%;
         min-width: 14em;
@@ -233,11 +233,10 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(xl) {
   #products,.featured-products,.product-accessories,.product-miniature  {
      .search-widget {
-      float: right;
-      text-align: right;
+      float: right;      
     }
   }
 }
