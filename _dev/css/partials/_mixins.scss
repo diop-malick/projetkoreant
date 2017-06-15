@@ -75,3 +75,31 @@
 @mixin box-shadow {
   box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.1);
 }
+
+@mixin lang-selector {
+  .language-selector {
+    a{
+      display: inline-block;
+      width: 1.203125em;
+      height: 1.203125em;
+      margin: 0.40625em 0.40625em -0.203125em;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(0.95);
+      background-position-y: -1px;
+    }
+    a.current{
+      filter: none;
+    }
+    a[href $= "/en/"]{
+      background-image: url(../img/en-flag.png);        
+    }
+    a[href $= "/fr/"]{
+      background-image: url(../img/fr-flag.png);
+    }
+    a:last-of-type{
+      margin-right: 0;
+    }
+  }
+}

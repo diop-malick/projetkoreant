@@ -44,8 +44,10 @@
     }
   }
   .header-banner{
-    margin-bottom: 1em;
+    height:1.625em;
+    margin-bottom: 1.625em;
     background: $gray;
+    @include lang-selector;
   }
   .header-nav {
     max-height: 50px;
@@ -76,10 +78,6 @@
       .account {
         margin-left: $small-space;
       }
-    }
-    .language-selector {
-      margin-top: rem(15px);
-      white-space: nowrap;
     }
     .blockcart {
       background: $gray-light;
@@ -145,6 +143,7 @@
       }
     }
     @include cart-preview;
+    @include lang-selector;
   }
   .top-menu-link {
     margin-left: $medium-space;
