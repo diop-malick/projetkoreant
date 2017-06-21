@@ -27,7 +27,7 @@
     <span class="hidden-md-up">{l s='Language:' d='Shop.Theme'}</span>
     <div class="language-selector">     
       {foreach from=$languages item=language}
-        <a {if $language.id_lang == $current_language.id_lang} class="current" {/if} href="{url entity='language' id=$language.id_lang}"></a>
+        <a class="{if $language.id_lang == $current_language.id_lang}current{/if} {$language.iso_code}" href="{url entity='language' id=$language.id_lang}"></a>
       {/foreach}     
     </div>
   </div>

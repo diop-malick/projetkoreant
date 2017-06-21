@@ -92,10 +92,10 @@
     a.current{
       filter: none;
     }
-    a[href $= "/en/"]{
+    a.en{
       background-image: url(../img/en-flag.png);        
     }
-    a[href $= "/fr/"]{
+    a.fr{
       background-image: url(../img/fr-flag.png);
     }
     a:last-of-type{

@@ -113,7 +113,8 @@
   .product-description,#product-description-short{
     z-index: 1;
     background: white;
-    margin-top: 1em;
+    margin: 1em auto 0;
+    max-width: 30em;
   }
   img {
     margin-left: 4px;

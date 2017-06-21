@@ -46,6 +46,7 @@
             {$my_account_url.title}
           </a>
         </li>
+    {break}
     {/foreach}
     {hook h='displayMyAccountBlock'}
 	</ul>
