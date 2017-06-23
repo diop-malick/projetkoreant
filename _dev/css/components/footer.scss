@@ -51,7 +51,8 @@ footer h3{
   font-size: $base-font-size;
 }
 .block-social {
-  text-align: right;
+  text-align: center;
+  width: 100%;
 }
 .block-social li,.social-sharing li {
   height: rem(40px);
@@ -107,6 +108,9 @@ footer h3{
 .instagram {
   background-image: url(../img/instagram.svg);
 }
+.footer-before{
+  text-align: center;
+}
 .footer-container {
   background: $gray;
   margin-top: $medium-space;
@@ -136,6 +140,9 @@ footer h3{
 .footer-after {
   padding: $medium-space 0;
   background: $gray-lighter;
+  .col-md-12{
+    width: 33.33333%;
+  }
 }
 
 @include media-breakpoint-down(sm) {
@@ -197,10 +204,25 @@ footer h3{
   }
 }
 @include media-breakpoint-down(md) {
-  .block-social {
-    text-align: center;
-  }
   .block-contact {
     padding-left: rem(24px);
+  }
+}
+@include media-breakpoint-up(sm) {
+  .block-social {
+    text-align: right;
+    width: 66.66667%;
+  }
+}
+@media (min-width: 1024px) {
+  .footer-before,.footer-container,.footer-after{
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-before,.footer-container,.footer-after{
+    padding-left: 14%;
+    padding-right: 14%;
   }
 }

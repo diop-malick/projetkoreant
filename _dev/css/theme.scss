@@ -194,9 +194,13 @@
         }
       }
       a {
-        color: $gray-dark;
+        span{
+          color: $gray-dark;
+        }
         &:hover {
-          color: $brand-primary;
+          span{
+            color: $brand-primary;
+          }
         }
       }
     }
@@ -308,9 +312,14 @@
     padding-top: rem(8px);
   }
 }
-@include media-breakpoint-down(md) {
+@media (max-width: 520px) {
   .container {
     max-width: 100%;
+  }
+}
+@include media-breakpoint-down(md) {
+  .container {
+    max-width: 95%;
   }
   #header .logo {
     width: auto;

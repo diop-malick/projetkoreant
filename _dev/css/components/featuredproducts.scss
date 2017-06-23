@@ -41,7 +41,7 @@
     min-height: 510px;
     text-align: center;
     color:#FFF;
-    
+
     h1{
       font-size: 3.25em;
       display: block;
@@ -62,13 +62,13 @@
         color: $brand-primary;
       }
     }
-   
+
   }
   .products-section-title {
     margin-top: rem(6px);
     font-size: rem(32px);
     text-align: left;
-    color: #222!important;
+    color: #777!important;
   }
   .product-title {
     text-align: center;
@@ -237,7 +237,7 @@
 @include media-breakpoint-up(xl) {
   #products,.featured-products,.product-accessories,.product-miniature  {
      .search-widget {
-      float: right;      
+      float: right;
     }
   }
 }
