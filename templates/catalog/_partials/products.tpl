@@ -23,7 +23,10 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="js-product-list">
-  <h1>{$listing.label} ({$listing.pagination.total_items})</h1>
+  <h1>
+    {if $listing.label|strstr:'Category: '}{$listing.label|replace:'Category: ':''}{/if}
+    {if $listing.label|strstr:'Catégorie : : '}{$listing.label|replace:'Catégorie : ':''}{/if} ({$listing.pagination.total_items})
+  </h1>
   <div class="products row">
     {foreach from=$listing.products item="product"}
       {block name='product_miniature'}

@@ -22,23 +22,31 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="container">
-  <div class="row" style="text-align:center">
+<div class="footer-before">
+  <div class="row">
       <div class="col col-sm-3">
+        <a href="/">
           <img src="{$urls.img_url}/pin.png" alt="{l s='Sale points' d='Shop.Theme'}" style="border:1px solid;border-radius:50%;margin-bottom:1em"/>
           <p>{l s='Sale points' d='Shop.Theme'}</p>
+        </a>
       </div>
       <div class="col col-sm-3">
+        <a href="/">
          <img src="{$urls.img_url}/handshake.png" alt="{l s='Sale points' d='Shop.Theme'}" style="border:1px solid;border-radius:50%;margin-bottom:1em"/>
           <p>{l s='Partners' d='Shop.Theme'}</p>
+        </a>
       </div>
       <div class="col col-sm-3">
+        <a href="/">
          <img src="{$urls.img_url}/lock.png" alt="{l s='Sale points' d='Shop.Theme'}" style="border:1px solid;border-radius:50%;margin-bottom:1em"/>
           <p>{l s='Secured payment' d='Shop.Theme'}</p>
+        </a>
       </div>
       <div class="col col-sm-3">
+        <a href="/">
           <img src="{$urls.img_url}/fastcar.png" alt="{l s='Sale points' d='Shop.Theme'}" style="border:1px solid;border-radius:50%;margin-bottom:1em"/>
           <p>{l s='Delivery in europe' d='Shop.Theme'}</p>
+        </a>
       </div>
   </div>
   <div class="row">
