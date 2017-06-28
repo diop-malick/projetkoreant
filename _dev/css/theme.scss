@@ -131,8 +131,9 @@
     }
     .user-cart{
       border: 1px solid $gray;
-      padding: 0.8125em .40625em;
-      margin-top: -1.40625em;
+      padding: 1em .40625em 1.625em;
+      margin-top: -2.40625em;
+      margin-bottom: 1em;
       .no-gutter{
         text-align: right;
       }

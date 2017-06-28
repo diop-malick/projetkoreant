@@ -22,6 +22,13 @@
   h1{
     font-size: 2rem;
     color: #555!important;
+    max-width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product-description-short{
+    max-width: 24em;
+    margin: 0 auto;
   }
 }
 .input-color {
@@ -452,6 +459,7 @@
 .product-variants {
   > .product-variants-item {
     margin: 0;
+    margin-bottom: 0.8125em;
     select {
       border: 1px solid $gray-light;
       height: rem(40px);
@@ -508,6 +516,7 @@ li.product-flag {
 }
 
 .product-customization {
+  display: none;
   @include box-shadow;
   margin: $extra-large-space 0;
   .product-customization-item {

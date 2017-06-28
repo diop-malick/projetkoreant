@@ -110,11 +110,16 @@ footer h3{
 }
 .footer-before{
   text-align: center;
+  img{
+    border:1px solid;
+    border-radius:50%;
+    margin-bottom:1em;
+  }
 }
 .footer-container {
   background: $gray;
   margin-top: $medium-space;
-  padding-top: 3em;
+  padding-top: 1em;
   padding-bottom: 2em;
   overflow: hidden;
   text-align: center;
@@ -153,6 +158,7 @@ footer h3{
   .footer-container {
     box-shadow: none;
     margin-top: 0;
+    padding-top: 2.5em;
     .wrapper {
       padding-left: 0 !important;
       padding-right: 0 !important;
