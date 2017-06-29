@@ -163,7 +163,6 @@
   .breadcrumb {
     background: $gray-light;
     padding: 1em 0;
-    text-align: right;
     margin-bottom: 0.8125em;
     &[data-depth="1"] {
       display: none;
@@ -190,10 +189,10 @@
           color: $gray-darker;
         }
       }
-      a {
-        span{
-          color: $gray-dark;
-        }
+      span{
+        color: $gray-dark;
+      }
+      a {        
         &:hover {
           span{
             color: $brand-primary;

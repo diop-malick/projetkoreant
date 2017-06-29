@@ -25,26 +25,26 @@
 <div class="footer-before">
   <div class="row">
       <div class="col col-sm-3">
-        <a href="/">
-          <img src="{$urls.img_url}/pin.png" alt="{l s='Sale points' d='Shop.Theme'}" style="border:1px solid;border-radius:50%;margin-bottom:1em"/>
+        <a href="{url entity='cms' id=7}">
+          <img src="{$urls.img_url}/pin.png" alt="{l s='Sale points' d='Shop.Theme'}"/>
           <p>{l s='Sale points' d='Shop.Theme'}</p>
         </a>
       </div>
       <div class="col col-sm-3">
-        <a href="/">
-         <img src="{$urls.img_url}/handshake.png" alt="{l s='Sale points' d='Shop.Theme'}" style="border:1px solid;border-radius:50%;margin-bottom:1em"/>
+        <a href="{url entity='cms' id=6}">
+         <img src="{$urls.img_url}/handshake.png" alt="{l s='Partners' d='Shop.Theme'}"/>
           <p>{l s='Partners' d='Shop.Theme'}</p>
         </a>
       </div>
       <div class="col col-sm-3">
-        <a href="/">
-         <img src="{$urls.img_url}/lock.png" alt="{l s='Sale points' d='Shop.Theme'}" style="border:1px solid;border-radius:50%;margin-bottom:1em"/>
+        <a href="{url entity='cms' id=2}">
+         <img src="{$urls.img_url}/lock.png" alt="{l s='Secured payment' d='Shop.Theme'}"/>
           <p>{l s='Secured payment' d='Shop.Theme'}</p>
         </a>
       </div>
       <div class="col col-sm-3">
-        <a href="/">
-          <img src="{$urls.img_url}/fastcar.png" alt="{l s='Sale points' d='Shop.Theme'}" style="border:1px solid;border-radius:50%;margin-bottom:1em"/>
+        <a href="{url entity='cms' id=3}">
+          <img src="{$urls.img_url}/fastcar.png" alt="{l s='Delivery in europe' d='Shop.Theme'}"/>
           <p>{l s='Delivery in europe' d='Shop.Theme'}</p>
         </a>
       </div>

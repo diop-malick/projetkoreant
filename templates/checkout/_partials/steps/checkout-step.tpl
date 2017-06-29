@@ -36,7 +36,6 @@
       <i class="material-icons done">&#xE876;</i>
       <span class="step-number">{$position}</span>
       {$title}
-      <span class="step-edit"><i class="material-icons edit">mode_edit</i> edit</span>
     </h1>
 
     <div class="content">

@@ -22,12 +22,12 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<nav data-depth="{$breadcrumb.count}" class="breadcrumb hidden-sm-down">
+<nav data-depth="{$breadcrumb.count}" class="breadcrumb text-md-right">
   <div class="container no-gutter">
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
       {foreach from=$breadcrumb.links item=path name=breadcrumb}
         {block name='breadcrumb_item'}
-          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <li itemprop="itemListElement" class="hidden-sm-down" itemscope itemtype="http://schema.org/ListItem">
 
           {if $smarty.foreach.breadcrumb.iteration != 2}
             <a itemprop="item" href="{$path.url}">
@@ -40,6 +40,11 @@
           </li>
         {/block}
       {/foreach}
+      <li itemprop="itemListElement" class="hidden-md-up" itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="javascript:void(0)" onclick="history.back()">
+          <span itemprop="name">< Retour</span>
+        </a>
+      </li>
     </ol>
   </div>
 </nav>
