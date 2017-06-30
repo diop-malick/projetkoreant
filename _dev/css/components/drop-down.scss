@@ -26,7 +26,7 @@
   }
 }
 
-.dropdown-item:focus, .dropdown-item:hover,.dropdown-item:active,.dropdown-item.active {
+.dropdown-item:focus, .dropdown-item:hover,.dropdown-item:active,.dropdown-item.active,.dropdown-item.active:focus {
   background: none;
   text-decoration: none;
   color: $brand-primary;

@@ -21,7 +21,7 @@
   }
   a[data-depth="0"] {
     font-weight: 600;
-    padding: rem(2px) $small-space rem(6px);
+    padding: 0 $small-space rem(6px);
     color: $gray-darker;
   }
   a[data-depth="1"],

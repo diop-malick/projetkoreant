@@ -92,7 +92,7 @@
     z-index: 0;
     background: white;
     text-align: center;
-    padding: rem(5px);
+    padding: rem(5px) 0;
     transition: bottom 300ms;
     .quick-view,.all-view{
       color: #000;
@@ -198,7 +198,7 @@
       .quick-view,.all-view {
         padding: 1em 2em;
         font-size: 100%;
-        min-width: 14em;
+        min-width: 13em;
       }
     }
   }
