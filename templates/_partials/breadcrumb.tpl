@@ -45,7 +45,7 @@
       {/if}
       <li itemprop="itemListElement" class="hidden-md-up" itemscope itemtype="http://schema.org/ListItem">
         <a itemprop="item" href="javascript:void(0)" onclick="history.back()">
-          <h1 itemprop="name"><i class="material-icons">&#xE5CB;</i> {$path.title} {if $listing.pagination.total_items}({$listing.pagination.total_items}){/if}</h1>
+          <h1 itemprop="name"><i class="material-icons">&#xE5CB;</i> {$path.title} {if isset($listing.pagination.total_items)}({$listing.pagination.total_items}){/if}</h1>
         </a>
       </li>
     </ol>
