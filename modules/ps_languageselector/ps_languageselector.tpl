@@ -24,8 +24,7 @@
 *}
 <div id="_desktop_language_selector">
   <div class="language-selector-wrapper">
-    <span class="hidden-md-up">{l s='Language:' d='Shop.Theme'}</span>
-    <div class="language-selector">     
+    <div class="language-selector">
       {foreach from=$languages item=language}
         <a class="{if $language.id_lang == $current_language.id_lang}current{/if} {$language.iso_code}" href="{url entity='language' id=$language.id_lang}"></a>
       {/foreach}     

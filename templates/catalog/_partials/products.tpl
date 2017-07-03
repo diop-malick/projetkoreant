@@ -23,9 +23,10 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="js-product-list">
-  <h1>
-    {if $listing.label|strstr:'Category: '}{$listing.label|replace:'Category: ':''}{/if}
-    {if $listing.label|strstr:'Catégorie : : '}{$listing.label|replace:'Catégorie : ':''}{/if} ({$listing.pagination.total_items})
+  <h1 class="hidden-sm-down">
+    {if $listing.label|strstr:'Category: '}{$listing.label|replace:'Category: ':''}
+    {elseif $listing.label|strstr:'Catégorie : : '}{$listing.label|replace:'Catégorie : ':''}
+    {else}{$listing.label}{/if} ({$listing.pagination.total_items})
   </h1>
   <div class="products row">
     {foreach from=$listing.products item="product"}
@@ -33,12 +34,5 @@
         {include file='catalog/_partials/miniatures/product.tpl' product=$product}
       {/block}
     {/foreach}
-  </div>
-
-  <div class="hidden-md-up text-xs-right up">
-    <a href="#header" class="btn btn-secondary">
-      {l s='Back to top' d='Shop.Theme.Actions'}
-      <i class="material-icons">&#xE316;</i>
-    </a>
   </div>
 </div>

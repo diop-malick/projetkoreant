@@ -165,15 +165,7 @@
                   <div class="product-accordion-header" aria-expanded="false">
                     <p>{l s='Free shipping at 50€' d='Shop.Theme'}</p>
                   </div>                                  
-                {/block}
-                {block name='product_details'}
-                  <div class="product-accordion-header" data-toggle="collapse" data-target="#product-accordion-details" aria-expanded="false">
-                    <p>{l s='Product Details' d='Shop.Theme.Catalog'}</p>
-                  </div>
-                  <div class="product-accordion-content collapse" id="product-accordion-details" aria-expanded="false">
-                    {include file='catalog/_partials/product-details.tpl'}
-                  </div>                
-                {/block}
+                {/block}                
               </div>
             {/block}
             {block name='product_additional_info'}

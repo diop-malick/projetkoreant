@@ -36,8 +36,8 @@
   </div>
   <ul class="account-list collapse" id="footer_account_list">
     <li>
-      <a href="{$urls.pages.my_account}" rel="nofollow" title="{l s='My account' d='Shop.Theme.Customeraccount'}" rel="nofollow">
-        {l s='My account' d='Shop.Theme.Customeraccount'}
+      <a href="{$urls.pages.my_account}" rel="nofollow" title="{l s='Your account' d='Shop.Theme.Customeraccount'}" rel="nofollow">
+        {l s='Your account' d='Shop.Theme.Customeraccount'}
       </a>
     </li>
     {foreach from=$my_account_urls|@array_slice:0:1 item=my_account_url}
@@ -46,7 +46,6 @@
             {$my_account_url.title}
           </a>
         </li>
-    {break}
     {/foreach}
     {hook h='displayMyAccountBlock'}
 	</ul>
