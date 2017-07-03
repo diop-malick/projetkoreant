@@ -26,7 +26,7 @@
   <h1 class="hidden-sm-down">
     {if $listing.label|strstr:'Category: '}{$listing.label|replace:'Category: ':''}
     {elseif $listing.label|strstr:'Catégorie : : '}{$listing.label|replace:'Catégorie : ':''}
-    {else}{$listing.label}{/if} ({$listing.pagination.total_items})
+    {else}{$listing.label} {if {$smarty.get.controller} eq 'search'} {$smarty.get.s} {/if} {/if} ({$listing.pagination.total_items})
   </h1>
   <div class="products row">
     {foreach from=$listing.products item="product"}
