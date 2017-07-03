@@ -40,7 +40,7 @@
         {l s='Your account' d='Shop.Theme.Customeraccount'}
       </a>
     </li>
-    {foreach from=$my_account_urls item=my_account_url}
+    {foreach from=$my_account_urls|@array_slice:0:2 item=my_account_url}
         <li>
           <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">
             {$my_account_url.title}
