@@ -89,7 +89,7 @@
             {/block}
             
             {block name='product_description_short'}
-              <div id="product-description-short-{$product.id}" itemprop="description">{$product.description_short nofilter}</div>
+              <div class="product-description-short" id="product-description-short-{$product.id}" itemprop="description">{$product.description_short nofilter}</div>
             {/block}
 
             {if $product.is_customizable && count($product.customizations.fields)}
@@ -156,14 +156,16 @@
                     </div>
                   {/block}
                 {/if}
-                {block name='product_details'}
-                  <div class="product-accordion-header" data-toggle="collapse" data-target="#product-accordion-details" aria-expanded="false">
-                    <p>{l s='Product Details' d='Shop.Theme.Catalog'}</p>
-                  </div>
-                  <div class="product-accordion-content collapse" id="product-accordion-details" aria-expanded="false">
-                    {include file='catalog/_partials/product-details.tpl'}
-                  </div>                
+                {block name='product_payment'}
+                  <div class="product-accordion-header" aria-expanded="false">
+                    <p>{l s='Secured payment' d='Shop.Theme'}</p>
+                  </div>                                  
                 {/block}
+                {block name='product_delivery'}
+                  <div class="product-accordion-header" aria-expanded="false">
+                    <p>{l s='Free shipping at 50€' d='Shop.Theme'}</p>
+                  </div>                                  
+                {/block}                
               </div>
             {/block}
             {block name='product_additional_info'}
@@ -172,6 +174,7 @@
           </div>
       </div>
     </div>
+    {*
     {block name='product_accessories'}
       {if $accessories}
         <section class="product-accessories clearfix">
@@ -186,7 +189,7 @@
         </section>
       {/if}
     {/block}
-
+    *}
     {block name='product_footer'}
       {hook h='displayFooterProduct' product=$product category=$category}
     {/block}

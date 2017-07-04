@@ -117,7 +117,7 @@ theme_settings:
   layouts:
     index: layout-landing-page
     category: layout-full-width
-    best-sales: layout-left-column
+    best-sales: layout-full-width
     new-products: layout-left-column
     prices-drop: layout-left-column
     contact: layout-left-column

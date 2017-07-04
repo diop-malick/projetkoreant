@@ -2,7 +2,8 @@
 # Generated assets
 
 assets/css/*
-assets/js/*
+assets/js/theme.js
+assets/js/theme.js.map
 
 assets/cache/*
 

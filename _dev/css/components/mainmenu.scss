@@ -21,7 +21,7 @@
   }
   a[data-depth="0"] {
     font-weight: 600;
-    padding: rem(2px) $small-space rem(6px);
+    padding: 0 $small-space rem(6px);
     color: $gray-darker;
   }
   a[data-depth="1"],
@@ -85,6 +85,7 @@
     a[data-depth="0"] {
       padding: rem(10px);
       border-bottom: 1px solid $gray-lighter;
+      font-size: 95%;
     }
     .collapse {
       display: none;
@@ -168,4 +169,22 @@
       }
     }
   }
+}
+/****** mettre en evidence boutique dans les pages PL, FP, Panier, selfcare, TC ******/
+#category .top-menu li:first-child a, 
+#product .top-menu li:first-child a, 
+#cart .top-menu li:first-child a,
+#my-account .top-menu li:first-child a,
+#identity .top-menu li:first-child a,
+#addresses .top-menu li:first-child a,
+#address .top-menu li:first-child a,
+#history .top-menu li:first-child a,
+#order-slip .top-menu li:first-child a,
+#checkout .top-menu li:first-child a,
+#order-confirmation .top-menu li:first-child a,
+#discount .top-menu li:first-child a,
+#authentication .top-menu li:first-child a{
+    color: $brand-primary!important;
+    text-decoration: none;
+    background: #fff;
 }

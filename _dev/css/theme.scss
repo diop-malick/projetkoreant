@@ -44,8 +44,10 @@
     }
   }
   .header-banner{
-    margin-bottom: 1em;
+    height:1.625em;
+    margin-bottom: 1.625em;
     background: $gray;
+    @include lang-selector;
   }
   .header-nav {
     max-height: 50px;
@@ -76,10 +78,6 @@
       .account {
         margin-left: $small-space;
       }
-    }
-    .language-selector {
-      margin-top: rem(15px);
-      white-space: nowrap;
     }
     .blockcart {
       background: $gray-light;
@@ -118,10 +116,6 @@
           float: left;
         }
       }
-      margin-bottom: rem(6px);
-      margin-top: -0.125em;
-      margin-left: -3em;
-      margin-right: 3em;
     }
     .position-static {
       position: static;
@@ -133,8 +127,9 @@
     }
     .user-cart{
       border: 1px solid $gray;
-      padding: 0.8125em .40625em;
-      margin-top: -1.40625em;
+      padding: 1em .40625em 1.625em;
+      margin-top: -2.40625em;
+      margin-bottom: 1em;
       .no-gutter{
         text-align: right;
       }
@@ -145,6 +140,7 @@
       }
     }
     @include cart-preview;
+    @include lang-selector;
   }
   .top-menu-link {
     margin-left: $medium-space;
@@ -167,7 +163,6 @@
   .breadcrumb {
     background: $gray-light;
     padding: 1em 0;
-    text-align: right;
     margin-bottom: 0.8125em;
     &[data-depth="1"] {
       display: none;
@@ -194,10 +189,14 @@
           color: $gray-darker;
         }
       }
-      a {
+      span{
         color: $gray-dark;
+      }
+      a {        
         &:hover {
-          color: $brand-primary;
+          span{
+            color: $brand-primary;
+          }
         }
       }
     }
@@ -230,6 +229,7 @@
 /*** FOOTER ***/
 #footer {
   padding-top: rem(16px);
+  margin-top: 1.625em;
 }
 
 /*** Responsive part ***/
@@ -309,9 +309,14 @@
     padding-top: rem(8px);
   }
 }
-@include media-breakpoint-down(md) {
+@media (max-width: 520px) {
   .container {
     max-width: 100%;
+  }
+}
+@include media-breakpoint-down(md) {
+  .container {
+    max-width: 95%;
   }
   #header .logo {
     width: auto;
@@ -336,6 +341,7 @@
   #blockcart-modal .product-name,
   #product-availability {
     margin-top: $small-space;
+    display: block;
   }
   #search_filters .facet .facet-label {
     text-align: left;

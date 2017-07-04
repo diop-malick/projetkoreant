@@ -23,19 +23,16 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="js-product-list">
-  <h1>{$listing.label} ({$listing.pagination.total_items})</h1>
+  <h1 class="hidden-sm-down">
+    {if $listing.label|strstr:'Category: '}{$listing.label|replace:'Category: ':''}
+    {elseif $listing.label|strstr:'Catégorie : : '}{$listing.label|replace:'Catégorie : ':''}
+    {else}{$listing.label} {if {$smarty.get.controller} eq 'search'} {$smarty.get.s} {/if} {/if} ({$listing.pagination.total_items} {l s='résultat(s)' d='Shop.Theme'})
+  </h1>
   <div class="products row">
     {foreach from=$listing.products item="product"}
       {block name='product_miniature'}
         {include file='catalog/_partials/miniatures/product.tpl' product=$product}
       {/block}
     {/foreach}
-  </div>
-
-  <div class="hidden-md-up text-xs-right up">
-    <a href="#header" class="btn btn-secondary">
-      {l s='Back to top' d='Shop.Theme.Actions'}
-      <i class="material-icons">&#xE316;</i>
-    </a>
   </div>
 </div>

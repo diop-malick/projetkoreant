@@ -1,4 +1,4 @@
-<div id="_desktop_user_info" class="col-md-7 hidden-sm-down">
+<div id="_desktop_user_info" class="col-md-7 hidden-sm-down no-gutter">
   <div class="user-info">
     {if $logged}
       <a
@@ -14,6 +14,7 @@
         title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
+        <i class="material-icons hidden-md-up">&#xE7FF;</i>
         <span class="hidden-sm-down">{$customerName}</span>
       </a>
     {else}
@@ -22,6 +23,7 @@
         title="{l s='Log in to your customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
+        <i class="material-icons hidden-md-up">&#xE7FF;</i>
         <span class="hidden-sm-down">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>
     {/if}
