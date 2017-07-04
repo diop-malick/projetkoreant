@@ -171,7 +171,17 @@
   }
 }
 /****** mettre en evidence boutique dans les pages PL, FP, Panier, selfcare, TC ******/
-#category .top-menu li:first-child a, #product .top-menu li:first-child a, #cart .top-menu li:first-child a{
+#category .top-menu li:first-child a, 
+#product .top-menu li:first-child a, 
+#cart .top-menu li:first-child a,
+#my-account .top-menu li:first-child a,
+#identity .top-menu li:first-child a,
+#addresses .top-menu li:first-child a,
+#address .top-menu li:first-child a,
+#history .top-menu li:first-child a,
+#order-slip .top-menu li:first-child a,
+#checkout .top-menu li:first-child a,
+#order-confirmation .top-menu li:first-child a{
     color: $brand-primary!important;
     text-decoration: none;
     background: #fff;
