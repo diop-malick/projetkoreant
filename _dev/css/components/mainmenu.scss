@@ -170,3 +170,9 @@
     }
   }
 }
+/****** mettre en evidence boutique dans les pages PL, FP, Panier, selfcare, TC ******/
+#category .top-menu li:first-child a, #product .top-menu li:first-child a, #cart .top-menu li:first-child a{
+    color: $brand-primary!important;
+    text-decoration: none;
+    background: #fff;
+}
