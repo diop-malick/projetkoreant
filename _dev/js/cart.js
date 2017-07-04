@@ -33,7 +33,6 @@ $(document).ready(() => {
   prestashop.on('updateCart', () => {
     $('.quickview').modal('hide');
     createSpin();
-    console.log(prestashop);
   });
 
   createSpin();
