@@ -181,7 +181,9 @@
 #history .top-menu li:first-child a,
 #order-slip .top-menu li:first-child a,
 #checkout .top-menu li:first-child a,
-#order-confirmation .top-menu li:first-child a{
+#order-confirmation .top-menu li:first-child a,
+#discount .top-menu li:first-child a,
+#authentication .top-menu li:first-child a{
     color: $brand-primary!important;
     text-decoration: none;
     background: #fff;
