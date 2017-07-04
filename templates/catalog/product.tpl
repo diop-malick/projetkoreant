@@ -174,6 +174,7 @@
           </div>
       </div>
     </div>
+    {*
     {block name='product_accessories'}
       {if $accessories}
         <section class="product-accessories clearfix">
@@ -188,7 +189,7 @@
         </section>
       {/if}
     {/block}
-
+    *}
     {block name='product_footer'}
       {hook h='displayFooterProduct' product=$product category=$category}
     {/block}
