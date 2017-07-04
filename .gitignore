@@ -4,7 +4,7 @@
 assets/css/*
 assets/js/theme.js
 assets/js/theme.js.map
-
+assets/js/shims
 assets/cache/*
 
 # Vendors and dependencies
