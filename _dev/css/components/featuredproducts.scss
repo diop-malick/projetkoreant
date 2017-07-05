@@ -41,11 +41,10 @@
     min-height: 510px;
     text-align: center;
     color:#FFF;
-
     h1{
       font-size: 3.25em;
       display: block;
-      padding: 2em 1em;
+      padding: 2em 0;
       height: 5.9875em;
       color: #fff !important;
     }
@@ -236,7 +235,12 @@
 
 @include media-breakpoint-up(xl) {
   #products,.featured-products,.product-accessories,.product-miniature  {
-     .search-widget {
+    .thumbnail-banner{
+      h1{
+        padding: 2em 1em;
+      }
+    }
+    .search-widget {
       float: right;
     }
   }
