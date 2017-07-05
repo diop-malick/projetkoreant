@@ -30,10 +30,7 @@
       {if {$smarty.get.controller} eq 'search'} 
         {$smarty.get.s} {/if} 
       {/if} 
-      ({$listing.pagination.total_items}
-      {if {$smarty.get.controller} eq 'search'}
-        {if $listing.pagination.total_items==1}
-        {l s='résultat' d='Shop.Theme'}{else}{l s='résultats' d='Shop.Theme'}{/if}{/if})
+      ({$listing.pagination.total_items}{if {$smarty.get.controller} eq 'search'}{if $listing.pagination.total_items==1}{l s='résultat' d='Shop.Theme'}{else}{l s='résultats' d='Shop.Theme'}{/if}{/if})
   </h1>
   <div class="products row">
     {foreach from=$listing.products item="product"}
