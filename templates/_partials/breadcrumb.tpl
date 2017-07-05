@@ -22,7 +22,6 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- {$breadcrumb|var_dump}
 <nav data-depth="{$breadcrumb.count}" class="breadcrumb text-md-right">
   <div class="container no-gutter">
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">
