@@ -24,10 +24,6 @@
  *}
 {extends file='page.tpl'}
 
-{block name='breadcrumb'}
-  {include file='_partials/breadcrumb.tpl'}
-{/block}
-
 {block name='page_title'}
   {l s='Our stores' d='Shop.Theme'}
 {/block}
