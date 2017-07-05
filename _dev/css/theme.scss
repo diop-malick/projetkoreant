@@ -164,6 +164,9 @@
     background: $gray-light;
     padding: 1em 0;
     margin-bottom: 0.8125em;
+    &[data-depth="1"] {
+      display: none;
+    }
     ol {
       padding-left: 0;
       margin-bottom: 0;

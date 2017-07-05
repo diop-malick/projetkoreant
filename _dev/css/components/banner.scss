@@ -67,7 +67,7 @@
         left: -10%;
       }
       &.block-right{
-        margin-top: 2em;
+        margin-top: 2.125em;
         &:after{
           left: auto;
           right: 33%;
@@ -123,7 +123,7 @@
 
 @media(min-width:768px){
   .ido-top-banner #custom-text {
-    padding: rem(136px) 0 rem(32px);
+    padding: rem(200px) 0 rem(32px);
   }
   .ido-top-banner {
     .ido-top-banner-row{
@@ -143,6 +143,9 @@
 }
 
 @media(min-width:920px){
+  .ido-top-banner #custom-text {
+    padding: rem(120px) 0 rem(32px);
+  }
   .ido-top-banner {
     .ido-top-banner-row{
       width: 100%;
@@ -154,7 +157,7 @@
 @media(min-width:1024px){
   .ido-top-banner {
     #custom-text {
-      padding: rem(104px) 0 rem(32px);
+      padding: rem(136px) 0 rem(32px);
       font-size: 90%;
     }
     .ido-top-banner-row{
@@ -167,8 +170,16 @@
 @media(min-width:1366px){
   .ido-top-banner {
     #custom-text {
-      padding: rem(120px) 0 rem(32px);
+      padding: rem(72px) 0 rem(72px);
       font-size: 100%;
+    }
+  }
+}
+
+@media(min-width:1420px){
+  .ido-top-banner {
+    #custom-text {
+      padding: rem(120px) 0 rem(32px);
     }
   }
 }
