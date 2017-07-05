@@ -21,7 +21,7 @@
   }
   a[data-depth="0"] {
     font-weight: 600;
-    padding: 0 $small-space rem(6px);
+    padding: 0 rem(6px) rem(6px);
     color: $gray-darker;
   }
   a[data-depth="1"],
@@ -85,7 +85,7 @@
     a[data-depth="0"] {
       padding: rem(10px);
       border-bottom: 1px solid $gray-lighter;
-      font-size: 95%;
+      font-size: 92%;
     }
     .collapse {
       display: none;
