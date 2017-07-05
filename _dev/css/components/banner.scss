@@ -67,7 +67,7 @@
         left: -10%;
       }
       &.block-right{
-        margin-top: 2.125em;
+        margin-top: 2em;
         &:after{
           left: auto;
           right: 33%;
@@ -144,7 +144,7 @@
 
 @media(min-width:920px){
   .ido-top-banner #custom-text {
-    padding: rem(120px) 0 rem(32px);
+    padding: rem(104px) 0 rem(32px);
   }
   .ido-top-banner {
     .ido-top-banner-row{
