@@ -35,6 +35,10 @@ $(document).ready(() => {
     createSpin();
   });
 
+  prestashop.on('updatedCart', () => {
+    createSpin();
+  });
+
   createSpin();
 
   let $body = $('body');
@@ -122,7 +126,7 @@ $(document).ready(() => {
 
     let $target = $(event.currentTarget);
     let dataset = event.currentTarget.dataset;
-    
+
     let cartAction = parseCartAction($target, event.namespace);
     let requestData = {
       ajax: '1',
@@ -165,8 +169,8 @@ $(document).ready(() => {
     handleCartAction
   );
 
-  $(spinnerSelector).on('touchspin.on.startdownspin', handleCartAction);
-  $(spinnerSelector).on('touchspin.on.startupspin', handleCartAction);
+  $body.on('touchspin.on.startdownspin', spinnerSelector, handleCartAction);
+  $body.on('touchspin.on.startupspin', spinnerSelector, handleCartAction);
 
   function sendUpdateQuantityInCartRequest(updateQuantityInCartUrl, requestData, $target) {
     abortPreviousRequests();
@@ -269,5 +273,3 @@ $(document).ready(() => {
     }
   )
 });
-
-
