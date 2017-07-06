@@ -36,7 +36,7 @@
         {$field.label} {if $field.required}<span class="required_field">*</span>{/if}
       {/if}
     </label>
-    <div class="col-md-6{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
+    <div class="col-md-9{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
 
       {if $field.type === 'select'}
 
