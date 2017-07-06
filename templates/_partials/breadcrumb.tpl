@@ -25,6 +25,10 @@
 {if $urls.pages.stores === $urls.current_url}
   {$breadcrumb.links[] = ['title' => {l s='Our stores' d='Shop.Theme'}, 'url' => $urls.pages.stores]}
 {/if}
+
+{if {url entity='best-sales'} === {$urls.current_url|replace:"http:":""} || {url entity='best-sales'} === {$urls.current_url|replace:"https:":""}}
+  {$breadcrumb.links[] = ['title' => {l s='Best Sellers' d='Shop.Theme.Catalog'}, 'url' => {url entity='best-sales'}]}
+{/if}
 <nav data-depth="{$breadcrumb.links|count}" class="breadcrumb text-md-right">
   <div class="container no-gutter">
     <ol itemscope itemtype="http://schema.org/BreadcrumbList">      
