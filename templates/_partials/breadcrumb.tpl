@@ -22,9 +22,12 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<nav data-depth="{$breadcrumb.count}" class="breadcrumb text-md-right">
+{if $urls.pages.stores === $urls.current_url}
+  {$breadcrumb.links[] = ['title' => {l s='Our stores' d='Shop.Theme'}, 'url' => $urls.pages.stores]}
+{/if}
+<nav data-depth="{$breadcrumb.links|count}" class="breadcrumb text-md-right">
   <div class="container no-gutter">
-    <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    <ol itemscope itemtype="http://schema.org/BreadcrumbList">      
       {foreach from=$breadcrumb.links item=path name=breadcrumb}
         {block name='breadcrumb_item'}
           <li itemprop="itemListElement" class="hidden-sm-down" itemscope itemtype="http://schema.org/ListItem">
