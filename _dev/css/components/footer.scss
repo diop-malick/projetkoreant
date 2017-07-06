@@ -1,5 +1,5 @@
 footer h3{
-  font-size: rem(26px)!important;
+  font-size: rem(24px)!important;
 }
 .block_newsletter {
   @include search-box;
@@ -119,7 +119,7 @@ footer h3{
 .footer-container {
   background: $gray;
   margin-top: $medium-space;
-  padding-top: 1em;
+  padding-top: 2em;
   padding-bottom: 2em;
   overflow: hidden;
   text-align: center;
@@ -166,7 +166,8 @@ footer h3{
     .links {
       .h3 {
         line-height: 1.5;
-        font-size: rem(16px);
+        font-size: rem(20px);
+        color: $gray-dark;
       }
       .title {
         padding: rem(10px);
