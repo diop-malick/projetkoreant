@@ -38,6 +38,7 @@ global_settings:
       - ps_linklist
       - ps_featuredproducts_2
       - ps_featuredproducts_3
+      - storeggmap
    to_disable:
       - ps_currencyselector
       - ps_emailsubscription
