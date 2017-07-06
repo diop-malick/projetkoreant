@@ -199,13 +199,16 @@
 
     </div>
 
+    {* 
     <div class="col-md-3 form-control-comment">
       {block name='form_field_comment'}
         {if (!$field.required && !in_array($field.type, ['radio-buttons', 'checkbox']))}
          {l s='Optional' d='Shop.Forms.Labels'}
         {/if}
       {/block}
-    </div>
+    </div> 
+    *}
+
   </div>
 
 {/if}
