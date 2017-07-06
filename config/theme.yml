@@ -100,8 +100,8 @@ global_settings:
       height: 510
       scope: [products]
     large_default:
-      width: 800
-      height: 800
+      width: 768
+      height: 768
       scope: [products, manufacturers, suppliers]
     category_default:
       width: 141
