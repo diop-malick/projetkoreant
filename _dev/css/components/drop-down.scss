@@ -8,7 +8,7 @@
     color: $gray-darker;
     cursor: pointer;
     @include user-select(none);
-
+    white-space: nowrap;
   }
 
   .active{
