@@ -165,7 +165,7 @@
                 {/block}
                 {block name='product_delivery'}
                   <div class="product-accordion-header" data-toggle="collapse" data-target="#product-accordion-shipping" aria-expanded="false">
-                    <p>{l s='Free shipping at 50€' d='Shop.Theme'}</p>
+                    <p>{l s='Free shipping at 100€' d='Shop.Theme'}</p>
                   </div>
                   <div class="product-accordion-content collapse" id="product-accordion-shipping" aria-expanded="false" data-url="{url entity='cms' id=1}">
                   </div>                                
