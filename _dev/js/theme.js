@@ -69,5 +69,17 @@ $(document).ready(() => {
   topMenu.init();
   productMinitature.init();
   productSelect.init();
+  getTabContentIfAvailable($('.product-accordion #product-accordion-payment'));
+  getTabContentIfAvailable($('.product-accordion #product-accordion-shipping'));
   ga('send', 'pageview');
 });
+
+function getTabContentIfAvailable($tab){
+  if($tab.length){
+    $.get($tab.data('url'), (content) => {
+      $tab.html($(content).find('.page-cms').contents());
+    }).fail((resp) => {
+      prestashop.emit('handleError', {eventType: 'getTabContent', resp: resp});
+    });
+  }
+}
