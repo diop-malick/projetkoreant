@@ -66,7 +66,7 @@ If you want to compile your assets using Webpack (and we advise you to), follow 
 > To build your assets once, type :
 
 ```bash
-$ npm run prod
+$ npm run build
 ```
 
 > To rebuild your assets every time you change a file in the _dev folder, type :
