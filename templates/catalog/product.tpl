@@ -160,14 +160,14 @@
                   <div class="product-accordion-header" data-toggle="collapse" data-target="#product-accordion-payment" aria-expanded="false">
                     <p>{l s='Secured payment' d='Shop.Theme'}</p>
                   </div>
-                  <div class="product-accordion-content collapse" id="product-accordion-payment" aria-expanded="false" data-url="{url entity='cms' id=5}">                    
+                  <div class="product-accordion-content collapse" id="product-accordion-payment" aria-expanded="false" data-url="{url entity='cms' id=7}">                    
                   </div>                              
                 {/block}
                 {block name='product_delivery'}
                   <div class="product-accordion-header" data-toggle="collapse" data-target="#product-accordion-shipping" aria-expanded="false">
                     <p>{l s='Free shipping at 100€' d='Shop.Theme'}</p>
                   </div>
-                  <div class="product-accordion-content collapse" id="product-accordion-shipping" aria-expanded="false" data-url="{url entity='cms' id=1}">
+                  <div class="product-accordion-content collapse" id="product-accordion-shipping" aria-expanded="false" data-url="{url entity='cms' id=8}">
                   </div>                                
                 {/block}                
               </div>
