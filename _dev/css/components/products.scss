@@ -85,6 +85,7 @@
 	.qty {
 		display: inline-block;
 		width: 80px;
+		margin-bottom: 0.8125em;
 	}
 	.add {
 		display: inline-block;
@@ -184,7 +185,7 @@
 .product-accordion {
 	text-align: left;
 	margin-bottom: 1.625em;
-	margin-top: 2.1625em;
+	margin-top: 3.25em;
 }
 .product-accordion-header {
 	border: 1px solid;
@@ -411,9 +412,11 @@
 	}
 }
 #product-availability {
-	display: inline-block;
 	font-weight: 700;
-	margin-left: $small-space;
+	margin-top: 1em;
+	position: absolute;
+	width: 100%;
+	left: 0;
 	.material-icons {
 		line-height: inherit;
 	}
