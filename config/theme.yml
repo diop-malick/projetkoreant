@@ -82,28 +82,28 @@ global_settings:
 
   image_types:
     cart_default:
-      width: 125
-      height: 125
+      width: 260
+      height: 180
       scope: [products]
     small_default:
       width: 98
       height: 98
       scope: [products, categories, manufacturers, suppliers]
     medium_default:
-      width: 452
-      height: 452
+      width: 260
+      height: 180
       scope: [products, manufacturers, suppliers]
     home_default:
       width: 260
-      height: 140
+      height: 180
       scope: [products]
     list_default:
       width: 510
-      height: 510
+      height: 440
       scope: [products]
     large_default:
       width: 768
-      height: 768
+      height: 668
       scope: [products, manufacturers, suppliers]
     category_default:
       width: 141
