@@ -1,235 +1,249 @@
-footer h3{
-  font-size: rem(24px)!important;
+footer h3 {
+	font-size: rem(24px) !important;
 }
 .block_newsletter {
-  @include search-box;
-  font-size: $font-size-sm;
-  p {
-    padding-top: $small-space;
-  }
-  form {
-    .input-wrapper {
-      overflow: hidden;
-    }
-    input[type=text] {
-      padding: 11px;
-      &:focus {
-        border: 3px $brand-primary solid;
-        padding: 8px 8px 9px;
-        outline: 0;
-      }
-      width: 100%;
-    }
-    input {
-      height: 42px;
-    }
-  }
-  margin-bottom: rem(10px);
+	@include search-box;
+	font-size: $font-size-sm;
+	p {
+		padding-top: $small-space;
+	}
+	form {
+		.input-wrapper {
+			overflow: hidden;
+		}
+		input[type="text"] {
+			padding: 11px;
+			&:focus {
+				border: 3px $brand-primary solid;
+				padding: 8px 8px 9px;
+				outline: 0;
+			}
+			width: 100%;
+		}
+		input {
+			height: 42px;
+		}
+	}
+	margin-bottom: rem(10px);
 }
 .block-contact {
-  border-left: $gray-light 2px solid;
-  padding-left: rem(48px);
-  color: $gray;
-  .block-contact-title{
-    color:$gray-darker;
-  }
+	border-left: $gray-light 2px solid;
+	padding-left: rem(48px);
+	color: $gray;
+	.block-contact-title {
+		color: $gray-darker;
+	}
 }
 .linklist {
-  .blockcms-title a {
-    color:$gray-darker;
-  }
+	.blockcms-title a {
+		color: $gray-darker;
+	}
 }
 .account-list a {
-  color: $gray;
-  &:hover {
-    color: $brand-primary;
-  }
+	color: $gray;
+	&:hover {
+		color: $brand-primary;
+	}
 }
 .blockcms-title,
 .block-contact-title {
-  font-weight: 700;
-  font-size: $base-font-size;
+	font-weight: 700;
+	font-size: $base-font-size;
 }
 .block-social {
-  text-align: center;
-  width: 100%;
+	text-align: center;
+	width: 100%;
 }
-.block-social li,.social-sharing li {
-  height: rem(40px);
-  width: rem(40px);
-  background-color: #ccc;
-  background-repeat: no-repeat;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 50%;
-  &:hover {
-    background-color: $gray;
-  }
-  a {
-    display: block;
-    height: 100%;
-    white-space: nowrap;
-    text-indent: 100%;
-    overflow: hidden;
-    &:hover {
-      color: transparent;
-    }
-  }
+.block-social li,
+.social-sharing li {
+	height: rem(40px);
+	width: rem(40px);
+	background-color: #ccc;
+	background-repeat: no-repeat;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 50%;
+	&:hover {
+		background-color: $gray;
+	}
+	a {
+		display: block;
+		height: 100%;
+		white-space: nowrap;
+		text-indent: 100%;
+		overflow: hidden;
+		&:hover {
+			color: transparent;
+		}
+	}
 }
-.block-social li{
-  margin: rem(8px) rem(20px);
+.block-social li {
+	margin: rem(8px) rem(20px);
 }
 .facebook {
-  background-image: url(../img/facebook.svg);
+	background-image: url(../img/facebook.svg);
+	&:hover {
+		background-color: #2d4485;
+	}
 }
 .twitter {
-  background-image: url(../img/twitter.svg);
+	background-image: url(../img/twitter.svg);
+	&:hover {
+		background-color: #36b9ff;
+	}
 }
 .rss {
-  background-image: url(../img/rss.svg);
+	background-image: url(../img/rss.svg);
 }
 .youtube {
-  background-image: url(../img/youtube.svg);
+	background-image: url(../img/youtube.svg);
 }
 .googleplus {
-  background-image: url(../img/gplus.svg);
+	background-image: url(../img/gplus.svg);
 }
-#block_myaccount_infos{
-  .myaccount-title a{
-    color:$gray-darker;
-  }
+#block_myaccount_infos {
+	.myaccount-title a {
+		color: $gray-darker;
+	}
 }
 .pinterest {
-  background-image: url(../img/pinterest.svg);
+	background-image: url(../img/pinterest.svg);
 }
 .vimeo {
-  background-image: url(../img/vimeo.svg);
+	background-image: url(../img/vimeo.svg);
 }
 .instagram {
-  background-image: url(../img/instagram.svg);
+	background-image: url(../img/instagram.svg);
+	&:hover {
+		background-color: linear-gradient(215deg, #924cc8, #f60713, #f6c800);
+	}
 }
-.footer-before{
-  text-align: center;
-  img{
-    border:1px solid;
-    border-radius:50%;
-    margin-bottom:1em;
-  }
+.footer-before {
+	text-align: center;
+	img {
+		border: 1px solid;
+		border-radius: 50%;
+		margin-bottom: 1em;
+	}
 }
 .footer-container {
-  background: $gray;
-  margin-top: $medium-space;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  overflow: hidden;
-  text-align: center;
-  li {
-    margin-bottom: rem(5px);
-  }
-  li a {
-    color: $gray-dark;
-    cursor: pointer;
-    &:hover {
-      color: $brand-primary;
-    }
-    &:before {
-      content: ">";
-    }
-  }
-  .links {
-    .collapse {
-      display: inherit;
-    }
-  }
+	background: $gray;
+	margin-top: $medium-space;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	overflow: hidden;
+	text-align: center;
+	li {
+		margin-bottom: rem(5px);
+	}
+	li a {
+		color: $gray-dark;
+		cursor: pointer;
+		&:hover {
+			color: $brand-primary;
+		}
+		&:before {
+			content: ">";
+		}
+	}
+	.links {
+		.collapse {
+			display: inherit;
+		}
+	}
 }
 .footer-after {
-  padding: $medium-space 0;
-  background: $gray-lighter;
-  .col-md-12{
-    width: 33.33333%;
-  }
+	padding: $medium-space 0;
+	background: $gray-lighter;
+	.col-md-12 {
+		width: 33.33333%;
+	}
 }
 
 @include media-breakpoint-down(sm) {
-  .block_newsletter {
-    padding-bottom: rem(10px);
-    border-bottom: 1px solid $gray-lighter;
-  }
-  .footer-container {
-    box-shadow: none;
-    margin-top: 0;
-    padding-top: 2.5em;
-    .wrapper {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-    .links {
-      .h3 {
-        line-height: 1.5;
-        font-size: rem(20px);
-        color: $gray-dark;
-      }
-      .title {
-        padding: rem(10px);
-        border-bottom: 1px solid $gray-lighter;
-        cursor: pointer;
-        .collapse-icons .remove {
-          display: none;
-        }
-      }
-      .title[aria-expanded="true"] .collapse-icons {
-        .add {
-          display: none;
-        }
-        .remove {
-          display: block;
-        }
-      }
-      .navbar-toggler {
-        display: inline-block;
-        padding: 0;
-      }
-      .collapse {
-        display: none;
-        &.in {
-          display: block;
-        }
-      }
-      ul {
-        background-color: $gray-lighter;
-        margin-bottom: 0;
-        > li {
-          padding: rem(10px);
-          border-bottom: 1px solid white;
-          font-weight: bold;
-          a {
-            color: $gray-darker;
-          }
-        }
-      }
-    }
-  }
+	.block_newsletter {
+		padding-bottom: rem(10px);
+		border-bottom: 1px solid $gray-lighter;
+	}
+	.footer-container {
+		box-shadow: none;
+		margin-top: 0;
+		padding-top: 2.5em;
+		.wrapper {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+		.links {
+			.h3 {
+				line-height: 1.5;
+				font-size: rem(20px);
+				color: $gray-dark;
+			}
+			.title {
+				padding: rem(10px);
+				border-bottom: 1px solid $gray-lighter;
+				cursor: pointer;
+				.collapse-icons .remove {
+					display: none;
+				}
+			}
+			.title[aria-expanded="true"] .collapse-icons {
+				.add {
+					display: none;
+				}
+				.remove {
+					display: block;
+				}
+			}
+			.navbar-toggler {
+				display: inline-block;
+				padding: 0;
+			}
+			.collapse {
+				display: none;
+				&.in {
+					display: block;
+				}
+			}
+			ul {
+				background-color: $gray-lighter;
+				margin-bottom: 0;
+				> li {
+					padding: rem(10px);
+					border-bottom: 1px solid white;
+					font-weight: bold;
+					a {
+						color: $gray-darker;
+					}
+				}
+			}
+		}
+	}
 }
 @include media-breakpoint-down(md) {
-  .block-contact {
-    padding-left: rem(24px);
-  }
+	.block-contact {
+		padding-left: rem(24px);
+	}
 }
 @include media-breakpoint-up(sm) {
-  .block-social {
-    text-align: right;
-    width: 66.66667%;
-  }
+	.block-social {
+		text-align: right;
+		width: 66.66667%;
+	}
 }
 @media (min-width: 1024px) {
-  .footer-before,.footer-container,.footer-after{
-    padding-left: 7%;
-    padding-right: 7%;
-  }
+	.footer-before,
+	.footer-container,
+	.footer-after {
+		padding-left: 7%;
+		padding-right: 7%;
+	}
 }
 @media (min-width: 1200px) {
-  .footer-before,.footer-container,.footer-after{
-    padding-left: 14%;
-    padding-right: 14%;
-  }
+	.footer-before,
+	.footer-container,
+	.footer-after {
+		padding-left: 14%;
+		padding-right: 14%;
+	}
 }
