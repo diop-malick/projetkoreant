@@ -4,7 +4,7 @@
       {if $cart.products_count > 0}
         <a rel="nofollow" href="{$cart_url}">
       {/if}
-        <span class="cart-products-count">Panier {$cart.products_count}</span>
+        <span class="cart-products-count">{l s='Shopping Cart' d='Shop.Theme.Checkout'} {$cart.products_count}</span>
         <div class="cart-icon"></div>
       {if $cart.products_count > 0}
         </a>
