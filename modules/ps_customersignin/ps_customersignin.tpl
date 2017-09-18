@@ -1,4 +1,4 @@
-<div id="_desktop_user_info" class="col-md-7 hidden-sm-down no-gutter">
+<div id="_desktop_user_info" class="col-md-6 hidden-sm-down no-gutter">
   <div class="user-info">
     {if $logged}
       <div class="currency-selector dropdown js-dropdown hidden-sm-down">
