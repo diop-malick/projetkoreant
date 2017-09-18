@@ -63,9 +63,6 @@ footer h3 {
 	display: inline-block;
 	cursor: pointer;
 	border-radius: 50%;
-	&:hover {
-		background-color: $gray;
-	}
 	a {
 		display: block;
 		height: 100%;
@@ -115,7 +112,7 @@ footer h3 {
 .instagram {
 	background-image: url(../img/instagram.svg);
 	&:hover {
-		background-color: linear-gradient(215deg, #924cc8, #f60713, #f6c800);
+		background: linear-gradient(215deg, #924cc8, #f60713, #f6c800);
 	}
 }
 .footer-before {
