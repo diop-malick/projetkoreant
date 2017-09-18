@@ -1,105 +1,106 @@
 @mixin search-box {
-  form {
-    position: relative;
-    display: inline-block;
-    input[type=text] {
-      &:focus {
-        outline: 1px $brand-primary solid;
-        color: $gray-dark;
-        background: white;
-        + button .search {
-          color: $brand-primary;
-        }
-      }
-      border: 1px solid;
-      padding: 15px;
-      background: transparent;
-      color: $gray;
-    }
-    button[type=submit] {
-      position: absolute;
-      background: none;
-      border: none;
-      bottom: 10px;
-      right: 15px;
-      color: $gray-dark;
-      .search:hover {
-        color: $brand-primary;
-      }
-      outline:none;
-    }
-  }
+	form {
+		position: relative;
+		display: inline-block;
+		input[type="text"] {
+			&:focus {
+				outline: 1px $brand-primary solid;
+				color: $gray-dark;
+				background: white;
+				+ button .search {
+					color: $brand-primary;
+				}
+			}
+			border: 1px solid;
+			padding: 15px;
+			background: transparent;
+			color: $gray;
+		}
+		button[type="submit"] {
+			position: absolute;
+			background: none;
+			border: none;
+			bottom: 10px;
+			right: 15px;
+			color: $gray-dark;
+			.search:hover {
+				color: $brand-primary;
+			}
+			outline: none;
+		}
+	}
 }
 
-@mixin cart-preview{
-  .cart-preview {
-    .cart-icon{
-      position: relative;
-      margin-top: -0.40625em;
-      top: 0.3125em;
-      width: 24px;
-      height: 19px;
-      display: inline-block;
-    }
-    &.inactive {
-      .cart-products-count{
-        color: $gray-dark;
-      }
-      .cart-icon{
-        background-image: url(../img/cart-inactive.png);
-      }
-    }
-    &.active {
-      a {
-        color: $gray-darker;
-        .cart-icon{
-          background-image: url(../img/cart.png);
-        }
-        &:hover {
-        color: $brand-primary;
-          .cart-icon{
-            background-image: url(../img/cart-active.png);
-          }
-        }  
-      } 
-    }
-    .shopping-cart {
-      vertical-align: middle;
-    }
-    .body {
-      display: none;
-    }
-  }
+@mixin cart-preview {
+	.cart-preview {
+		text-align: right;
+		.cart-icon {
+			position: relative;
+			margin-top: -0.40625em;
+			top: 0.3125em;
+			width: 24px;
+			height: 19px;
+			display: inline-block;
+		}
+		&.inactive {
+			.cart-products-count {
+				color: $gray-dark;
+			}
+			.cart-icon {
+				background-image: url(../img/cart-inactive.png);
+			}
+		}
+		&.active {
+			a {
+				color: $gray-darker;
+				.cart-icon {
+					background-image: url(../img/cart.png);
+				}
+				&:hover {
+					color: $brand-primary;
+					.cart-icon {
+						background-image: url(../img/cart-active.png);
+					}
+				}
+			}
+		}
+		.shopping-cart {
+			vertical-align: middle;
+		}
+		.body {
+			display: none;
+		}
+	}
 }
 
 @mixin box-shadow {
-  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.1);
 }
 
 @mixin lang-selector {
-  .language-selector {
-    a{
-      display: inline-block;
-      width: 1.203125em;
-      height: 1.203125em;
-      margin: 0.40625em 0.40625em -0.8125em;
-      border-radius: 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      filter: grayscale(0.95);
-      background-position-y: -1px;
-    }
-    a.current{
-      filter: none;
-    }
-    a.en{
-      background-image: url(../img/en-flag.png);        
-    }
-    a.fr{
-      background-image: url(../img/fr-flag.png);
-    }
-    a:last-of-type{
-      margin-right: 0;
-    }
-  }
+	.language-selector {
+		a {
+			display: inline-block;
+			width: 1.203125em;
+			height: 1.203125em;
+			margin: 0.40625em 0.40625em -0.8125em;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			filter: grayscale(0.95);
+			background-position-y: -1px;
+		}
+		a.current {
+			filter: none;
+		}
+		a.en {
+			background-image: url(../img/en-flag.png);
+		}
+		a.fr {
+			background-image: url(../img/fr-flag.png);
+		}
+		a:last-of-type {
+			margin-right: 0;
+		}
+	}
 }
