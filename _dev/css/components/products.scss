@@ -197,12 +197,12 @@
 		margin: 0;
 		&:before {
 			@extend .material-icons;
-			content: 'keyboard_arrow_right';
+			content: "keyboard_arrow_right";
 		}
 	}
-	&[aria-expanded=true] {
+	&[aria-expanded="true"] {
 		p:before {
-			content: 'keyboard_arrow_down';
+			content: "keyboard_arrow_down";
 		}
 	}
 }
@@ -414,9 +414,8 @@
 #product-availability {
 	font-weight: 700;
 	margin-top: 1em;
-	position: absolute;
+	display: block;
 	width: 100%;
-	left: 0;
 	.material-icons {
 		line-height: inherit;
 	}
@@ -503,7 +502,7 @@ li.product-flag {
 		font-size: $font-size-xs;
 		&::before {
 			content: "\E30A";
-			font-family: 'Material Icons';
+			font-family: "Material Icons";
 			vertical-align: middle;
 			margin: rem(5px);
 		}

@@ -19,8 +19,9 @@ The Classic Theme is the new default Theme for Prestashop 1.7 and onwards. It is
 
 Clone the forked & custom ps_featuresproducts module to your local machine in the /modules directory of your PrestaShop installation.
 
+> git clone https://citizendiop@bitbucket.org/citizendiop/ps_featuredproducts_2.git
 > git clone https://citizendiop@bitbucket.org/citizendiop/ps_featuredproducts_3.git
-> git clone https://citizendiop@bitbucket.org/citizendiop/ps_featuredproducts_3.git
+> git clone https://github.com/ArnaudDx/Google-map-store-page-prestashop-1.7.git
 
 
 ## Step 2: Install Theme
