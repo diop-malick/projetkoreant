@@ -11,7 +11,7 @@
 		text-align: center;
 	}
 	.ido-banner-content {
-		max-width: 56em;
+		max-width: 33em;
 		padding: 1em 2em;
 		text-align: center;
 		h1 {
@@ -98,7 +98,10 @@
 		margin-bottom: 0.2em;
 		font-family: "PT Serif" !important;
 		color: #fff !important;
-		font-size: 133%;
+		font-size: 120%;
+	}
+	h3 {
+		font-size: 95%;
 	}
 	.scroll {
 		display: block;
@@ -116,7 +119,7 @@
 	}
 }
 .ido-bottom-banner {
-	min-height: 50vh;
+	min-height: 38vh;
 	margin-top: 2em;
 	h1 {
 		padding-top: 1.25em;
