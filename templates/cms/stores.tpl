@@ -40,8 +40,21 @@
           <div class="col-md-5 col-sm-7 col-xs-12 store-description">
             <h3 class="h3 card-title">{$store.name}</h3>
             <address>{$store.address.formatted nofilter}</address>
+
+              {if $store.phone}
+                <div><i class="material-icons">&#xE0B0;</i>&nbsp;&nbsp;{$store.phone}</div>
+              {/if}
+              {if $store.fax}
+                <div><i class="material-icons">&#xE8AD;</i>&nbsp;&nbsp;{$store.fax}</div>
+              {/if}
+              {if $store.email}
+                <div><i class="material-icons">&#xE0BE;</i>&nbsp;&nbsp;{$store.email}</div>
+              {/if}
+            
+            <br>
+
             {if $store.note || $store.phone || $store.fax || $store.email}
-              <a data-toggle="collapse" href="#about-{$store.id}" aria-expanded="false" aria-controls="about-{$store.id}"><strong>{l s='About and Contact' d='Shop.Theme'}</strong><i class="material-icons">&#xE409;</i></a>
+              <a href="{url entity='contact'}"><strong>{l s='About and Contact' d='Shop.Theme'}</strong><i class="material-icons">&#xE409;</i></a>
             {/if}
           </div>
           <div class="col-md-4 col-sm-5 col-xs-12 divide-left">
@@ -61,6 +74,8 @@
             </table>
           </div>
         </div>
+
+        {*
         <footer id="about-{$store.id}" class="collapse">
           <div class="store-item-footer divide-top">
             <div class="card-block">
@@ -81,6 +96,8 @@
             </ul>
           </div>
         </footer>
+        *}
+
       </article>
     {/foreach}
 

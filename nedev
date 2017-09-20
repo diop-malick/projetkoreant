@@ -1,0 +1,82 @@
+[33mc6e75ea3c54079ab43be7c24b0b25c86be8fc143[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33m7d56423570bc5d685204e385af2278a9ec90fbde[m Fixed remove product when quantity < 0
+[33mae5bdbe24fb0dbbd51823a7e1359dda2eaebcdee[m Clone step module googlemap added
+[33m98c929b1d5065c2d2dba9ea10dda23c5f8e1418c[m Fiche Produit pas de message quantité minimale
+[33me82685d289b176949a0a91f30e8e59acad24b339[m Fiche produit info stock fix
+[33m04d82c9a68fac8fbd4fa00242a85fb6a1854e7a9[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33mbf57f619dbd70c7e427f1c388dc89b5cc5daafab[m Image cover size
+[33m057e00e16c388ccc54ef8ec44523cfece9e4331c[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33m3561fc93ba046e64ae1e55c25f00a39932a69a82[m Cover images products
+[33m94ce3d67a4a2a704f6448405d8a854a2b829dd41[m Image optimisation
+[33mcfff85b2e19fc34e1d390f51730b0a0a74da4e81[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33ma9ada6c042229fab6415fbf7822f31ebfb95f6ad[m Build command changed npm run build
+[33m8372182b9193ba14ce845689159a7161bfe046ca[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33m1cbbc02b206de7e934c06153493591357de84f6b[m New image integration
+[33mb485c4c84addfaa0309167147ffd29ef54dad817[m Onglets CMS Fiche produit by Ajax
+[33m15d84ce9d4ad0153fb5fab258b7ba33010824caf[m Bestsellers on page confirmation
+[33m8f5aaf5ee0f4e13635fd3afaba5165e0decae5e5[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33m94a1b85f5f2c554c9f401372c7ed8666c3535411[m Modidyt tab Free shipping at 100€
+[33mbb44d21aba91540bf930144740f0d43f1549cef6[m Dynamic content Product Tab
+[33m8cb5f87ec7e32ff2dae9c096118ed788b383a4ea[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33m492fec7f59fef02c66ecf7aab56afc5946c5d4dc[m Google Analytics Setup
+[33mf2955c990a461621d2b428548baef887cacaf6ca[m Dropdown customer account
+[33m2c13b6d7a5ab544a16cd3039bad934896179ff9a[m Google Analytics Setup
+[33mfd844520ace528ca5444ddcf2f7af8ce8961477f[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33mdcda94c33771a7c1851cdd662e0778b7df9abb2e[m Home Banner ipad adjustement
+[33m60a2bca1d7f3e0b6830a70711dbe47fa302a6eea[m Merge branch 'develop' of ssh://vps365425.ovh.net:29/home/dev/mygithub/ido into develop
+[33m17811284c84a2b758a0d9b3db167fb3b21e34eb0[m Stores map
+[33m1c780ac8726781c113ef5a2882740f2f840b7569[m (PRK-114) [Ido][DESK][Fil d'ariane] Le fil d'ariane n'est pas affiché sur la page Point de vente
+[33ma58aa6d80ae1501a09c289e4a3b31aae4acdb6de[m Footer adjustement
+[33m2549a586c236f3390ef04215f03de60ab80c0bc8[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant/src into develop
+[33mf40905e6595f12d3bec1bd9d4babcb607579a7c1[m [Ido][DESK][Fil d'ariane] Le fil d'ariane n'est pas affiché sur la page Point de vente
+[33m238d9c469138df29f4978ac47ac1ebf5c79fa0c1[m Product image resize
+[33mfaa838e0c39146940c2cda0bbee0478663f2113e[m Form - Remove control coment "optional"
+[33mf1b013f26df03fae9dde77a403af7683a0e79ebf[m Form - Remove control coment "optional"
+[33me1910d0759511483beab91cabf6fa7644cfb16b4[m Minor adjustements
+[33mdd128cb0d0ae171b9e41e5c0c9bb378b6a57a564[m Minor adjustements
+[33mfc7b68b15d577140a788f78e69786d67a5f55d5b[m [Ido][DESK][HP] Aligner les flèches et les organes ciblés sur la bannière principale
+[33m38ffff5208b24bebbbd1eba4dbbf221efd98830f[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant/src into develop
+[33ma2a2362932d02ce1ae40a8288134627596ae00ff[m Menu pading
+[33m47cf3c4aeed2bd7921fa9d54a83df6e08a07bbb0[m text resultat recherche delete espace
+[33m8fd048ebb704d99338a863ec033151abd8edce13[m text resultat recherche
+[33m8a9698548ca4986fab04ca8106111ba2f2cd1936[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33m5cf02437c808bfdf520b96cc555b38d03b8f9cdf[m mettre en evidence lien boutique home
+[33m74a1c086d66c2e400b0a2b0e817f19e71552077e[m Breadcrumb page stores
+[33m9c8961d5f3252ba2bc90bc6f6265a474d95497ed[m Breadcrumb page stores
+[33m56a140a6a34833b6fe97ac9a83ac2c795463a4e2[m Page liste info update
+[33m9b96071082e900075a7ca01a7811dbb2c0a50e39[m [Ido][DESK][HP] Aligner les flèches et les organes ciblés sur la bannière principale
+[33mc7d6e1656b6b9c577b963c053ceb92de822d863b[m [Ido][TABLETTE][IPAD MINI][Homepage] Le découpage de la page d'accueil est KO
+[33m8d2a1e87cc5b05915b7993b9f251f3c694908979[m Breadcrumb on stores page
+[33m310ce232860f585271562b2c99f35e360fe4238a[m Description produit page liste adjustement
+[33mdd04d937c2a29d180014c3a3d746333934a3df0b[m [Ido][TABLETTE][IPAD MINI][Homepage] Le découpage de la page d'accueil est KO
+[33m100ae6daf5c96451c4ab5927523971696d2efe2d[m (PRK-130) [Ido][MOBILE][GALAXY S5] [SELFCARE]
+[33m957bac3948f67dfee6d724fd009757573b429668[m [Ido][TABLETTE][IPAD MINI][Homepage] Le découpage de la page d'accueil est KO
+[33med96dd15f98e14350a39a677b227bab6cea58fce[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant/src into develop
+[33m950b813b59f9ea24bd4653b9e5327bba0c13f488[m [Ido][DESK][HP] Aligner les flèches et les organes ciblés sur la bannière principale
+[33m96916c12dd12476f2a90eb84bca03af659465270[m gitgnore - Polyfill assets
+[33m3abd9c4f17c290d2c9d7c808b4989ea90502e84c[m git rm lib webshims
+[33m869b06dcc7bf6e049093a8afb91a3aede5197da5[m gitignore sims asset
+[33m3412eafe51043d2439c42e232de0b65c30d7ff09[m gitignore
+[33m14e92114e57c90f1f90b95179790d32b08067fe7[m git rm lib jshims
+[33m0b4bcb6a05a7ea94acefc708a5bf92a05ed1cc92[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33m7ac73165422b37d04e2208296c95457d2fdd0b31[m [Ido][DESK][PANIER] La modification de la quantité est KO
+[33ma7711c9bceff836606ec2862f366857d3b0c89c2[m [Ido][DESK][HP] Aligner les flèches et les organes ciblés sur la bannière principale
+[33m40fff13c114be21b10e7500cb80bf2b95c24d159[m cancel debug error modification panier
+[33m30c791225f73d5bd77f5d46ed9fdffcaa50ec0ce[m debug error modification panier
+[33m8e59299934ebb3551fbd8b304681e1bd83114720[m debug error modification panier
+[33mca788aa831aea11653a302a4313c65a9b8e96cef[m [Ido][DESK][PL] Le lien boutique du menu de navigation n'est pas mis en évidence(3).
+[33m5882048b4e100eee57c3ceab73de6d58ca66a57e[m [Ido][DESK][PL] Le lien boutique du menu de navigation n'est pas mis en évidence.(2)
+[33m6f5df9ca9a53a6f3117b1185254896d692f467b5[m [Ido][DESK][PL] Le lien boutique du menu de navigation n'est pas mis en évidence.(1)
+[33m0d9ed87dbcdee9963bbbcc1769c54181a22db049[m [Ido][DESK][FP]Deux zones de push sont affichées sur la FP
+[33m28d99ae7f5f8adb9c71aae6580d26e57adbe7d75[m link picto footer
+[33mc3300dfa6199a16abc9234bf54e14854b6bf7d66[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant into develop
+[33m92e9a9e5b468bb4ebcd36f54be64c4977b8d6fda[m change lang webshim
+[33m443f7ee213142b0c6aad5450236a452bf49ccc8e[m [Ido][TABLETTE][IPAD MINI][Homepage] Le découpage de la page d'accueil est KO
+[33m8893a0fe8cdbe7ce8a1be0a6f99fbba4dbc579e4[m move shims folder
+[33me639d4fea153d82cd48f4d97b0ffc2c7a7fc83be[m Git ignore update
+[33mdd73d449c34d7f18e1146484991e4d63e07b5169[m Merge branch 'develop' of https://bitbucket.org/citizendiop/projetkoreant/src into develop
+[33m290dd77cd54c882db01cfa505fed0171308fca1a[m [Ido][DESK][Footer]Corriger le bloc 'Mon compte' du footer et respecter les marges
+[33m192f4d5e5eac57068277e403f1a3b4ffff4ffe8f[m move shims folder
+[33mf5ae265e92ce4d2fe7d86fb1c5dffb659393cc13[m [Ido][TABLETTE][Ipad Mini][SELFCARE] Les messages d'erreurs ne sont pas conformes.
+[33m9ad94d31c0e8de421251287b56cbe685687fc53b[m [Ido][DESK][PANIER] La modification de la quantité est KO
+[33m60ca0d7e96210f58051a0243858ea31ec9cde74c[m [Ido][DESK][Footer]Corriger le bloc 'Mon compte' du foo
