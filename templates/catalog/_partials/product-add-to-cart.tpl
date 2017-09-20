@@ -59,7 +59,9 @@
               {else}
                 <i class="material-icons product-unavailable">&#xE14B;</i>
               {/if}
-              {$product.availability_message}
+              {if $product.availability_message !== trans('Product available with different options', array(),'Shop.Theme.Catalog' )}
+                {$product.availability_message}
+              {/if}
             {/if}
           </span>
         {/block}
