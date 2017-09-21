@@ -24,7 +24,7 @@
 *}
 {if isset($banner_img)}
 <section class="ido-bottom-banner">
-  <a class="banner-link" href="{$banner_link}">
+  <a class="banner-link" target="_blank" href="{$banner_link}">
     <div class="ido-banner-content">
       <h1>{$banner_desc}</h1>
       
