@@ -112,7 +112,8 @@ footer h3 {
 .instagram {
 	background-image: url(../img/instagram.svg);
 	&:hover {
-		background: linear-gradient(215deg, #924cc8, #f60713, #f6c800);
+		background-image: url(../img/instagram.svg),
+			linear-gradient(215deg, #924cc8, #f60713, #f6c800);
 	}
 }
 .footer-before {
