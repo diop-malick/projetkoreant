@@ -23,11 +23,13 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 {if isset($banner_img)}
-<section class="ido-bottom-banner" style="background-image:linear-gradient(rgba(100,100,100,0.325),rgba(100,100,100,0.325),rgba(100,100,100,0.325)),url({$banner_img})">
-  <div class="ido-banner-content">
-    <h1>{$banner_desc}</h1>
-    <a class="banner-link" href="{$banner_link}">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
-  </div>
+<section class="ido-bottom-banner">
+  <a class="banner-link" href="{$banner_link}">
+    <div class="ido-banner-content">
+      <h1>{$banner_desc}</h1>
+      
+    </div>
+  </a>
 </section>
 {/if}
 

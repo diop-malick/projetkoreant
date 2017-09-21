@@ -1,6 +1,6 @@
 .ido-top-banner,
 .ido-bottom-banner {
-	background-size: cover;
+	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
 	a {
@@ -40,7 +40,7 @@
 }
 .ido-top-banner {
 	min-height: 83vh;
-	position: relative;
+	background-size: cover;
 	background-image: url(../img/banner.png);
 	#custom-text {
 		padding: rem(32px) 0 rem(32px);
@@ -119,11 +119,17 @@
 	}
 }
 .ido-bottom-banner {
-	min-height: 38vh;
+	background-image: url(../img/banner-nat-expo-mob.png);
+
+	background-size: contain;
+	min-height: 48vh;
 	margin-top: 2em;
 	h1 {
 		padding-top: 1.25em;
 		margin-bottom: 1.5em;
+	}
+	a {
+		min-height: 48vh;
 	}
 }
 
@@ -134,6 +140,14 @@
 			.banner-link {
 				display: inline;
 			}
+		}
+	}
+}
+@media (min-width: 520px) {
+	.ido-bottom-banner {
+		min-height: 68vh;
+		a {
+			min-height: 68vh;
 		}
 	}
 }
@@ -155,6 +169,12 @@
 		.ido-top-banner-row {
 			margin-left: -0.40625em;
 			width: 98%;
+		}
+	}
+	.ido-bottom-banner {
+		min-height: 84vh;
+		a {
+			min-height: 84vh;
 		}
 	}
 }
@@ -180,6 +200,14 @@
 		.ido-top-banner-row {
 			width: 99%;
 			margin-top: 0.25rem;
+		}
+	}
+	.ido-bottom-banner {
+		background-image: url(../img/banner-nat-expo-desk.png);
+		background-size: cover;
+		min-height: 38vh;
+		a {
+			min-height: 38vh;
 		}
 	}
 }
