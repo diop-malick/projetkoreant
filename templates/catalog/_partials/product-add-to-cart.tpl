@@ -48,8 +48,9 @@
           >
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button  
-        </div>
-        {block name='product_availability'}
+        </div>        
+      </div>
+      {block name='product_availability'}
           <span id="product-availability">
             {if $product.show_availability && $product.availability_message}
               {if $product.availability == 'available'}
@@ -67,7 +68,6 @@
             {/if}
           </span>
         {/block}
-      </div>
       <div class="clearfix"></div>
     {/block}
   {/if}
