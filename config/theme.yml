@@ -58,11 +58,11 @@ global_settings:
         - ps_customersignin
         - ps_shoppingcart
       displayHome:
+        - ps_banner
         - ps_customtext
         - ps_featuredproducts
         - ps_featuredproducts_2
-        - ps_featuredproducts_3
-        - ps_banner
+        - ps_featuredproducts_3        
       displayFooter:
         - ps_linklist
         - ps_customeraccountlinks
