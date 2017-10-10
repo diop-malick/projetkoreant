@@ -130,6 +130,12 @@
 
       {elseif $field.type === 'password'}
 
+        {if $language.language_code=="fr"}
+                   {assign var="error_message" value="Veuillez renseigner un mot de passe."}
+        {elseif  $language.language_code=="en-us"}
+                    {assign var="error_message" value="Please enter a password."}
+        {/if}
+
         {block name='form_field_item_password'}
           <div class="input-group js-parent-focus">
             <input
@@ -138,8 +144,8 @@
               type="password"
               value=""
               pattern=".{literal}{{/literal}5,{literal}}{/literal}"
-              {if $field.required}required oninvalid="this.setCustomValidity('{l s='Veuillez renseigner un mot de passe.' d='Shop.Forms.Errors' }')"
-    oninput="setCustomValidity('')" x-moz-errormessage="{l s='Veuillez renseigner un mot de passe.' d='Shop.Forms.Errors' }"{/if}
+              {if $field.required}required oninvalid="this.setCustomValidity('{l s=$error_message d='Shop.Forms.Errors' }')"
+    oninput="setCustomValidity('')" x-moz-errormessage="{l s=$error_message d='Shop.Forms.Errors' }"{/if}
             >
             <span class="input-group-btn">
               <button
@@ -157,7 +163,7 @@
 
       {else}
               {* {$field.name|var_dump} *}
-              
+
             {if $field.name=="firstname"}
 
                 {if $language.language_code=="fr"}
