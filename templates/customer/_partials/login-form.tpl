@@ -24,11 +24,12 @@
  *}
 {block name='login_form'}
 
-  {block name='login_form_errors'}
-    {include file='_partials/form-errors.tpl' errors=$errors['']}
-  {/block}
-
   <form id="login-form" action="{block name='login_form_actionurl'}{$action}{/block}" method="post">
+    <div class="form-group has-error">
+      {block name='login_form_errors'}
+        {include file='_partials/form-errors.tpl' errors=$errors['']}
+      {/block}
+    </div>
 
     <section>
       {block name='login_form_fields'}
