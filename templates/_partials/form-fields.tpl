@@ -156,16 +156,8 @@
         {/block}
 
       {else}
-              {* {$field.name|var_dump} 
-
-                  {l s='Veuillez renseigner le prénom.'}
-                  {l s='Veuillez renseigner le nom.' d='Shop.Forms.Errors'}
-                  {l s='Veuillez renseigner une adresse email.' d='Shop.Forms.Errors'}
-                  {l s='Veuillez renseigner une adresse.' d='Shop.Forms.Errors'}
-                  {l s='Veuillez renseigner un code postal.' d='Shop.Forms.Errors'}
-                  {l s='Veuillez renseigner une ville.' d='Shop.Forms.Errors'}
-              *}
-              {$language.language_code}
+              {* {$field.name|var_dump} *}
+              
             {if $field.name=="firstname"}
 
                 {if $language.language_code=="fr"}
