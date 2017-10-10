@@ -158,27 +158,61 @@
       {else}
               {* {$field.name|var_dump} 
 
-                  {l s='Veuillez renseigner le prénom.' d='Shop.Forms.Errors'}
+                  {l s='Veuillez renseigner le prénom.'}
                   {l s='Veuillez renseigner le nom.' d='Shop.Forms.Errors'}
                   {l s='Veuillez renseigner une adresse email.' d='Shop.Forms.Errors'}
                   {l s='Veuillez renseigner une adresse.' d='Shop.Forms.Errors'}
                   {l s='Veuillez renseigner un code postal.' d='Shop.Forms.Errors'}
                   {l s='Veuillez renseigner une ville.' d='Shop.Forms.Errors'}
-
               *}
-              
             {if $field.name=="firstname"}
-              {assign var="error_message" value="Veuillez renseigner le prénom."}
+
+                {if $language.language_code=="fr"}
+                   {assign var="error_message" value="Veuillez renseigner le prénom."}
+                {elseif  $language.language_code=="en"}
+                    {assign var="error_message" value="Please fill in the first name."}
+                {/if}
+
             {elseif  $field.name=="lastname"}
-              {assign var="error_message" value="Veuillez renseigner le nom."}
+
+              {if $language.language_code=="fr"}
+                   {assign var="error_message" value="Veuillez renseigner le nom."}
+                {elseif  $language.language_code=="en"}
+                    {assign var="error_message" value="Please fill in the name."}
+                {/if}
+
             {elseif $field.name=="email"}
-              {assign var="error_message" value="Veuillez renseigner une adresse email."}
+              
+              {if $language.language_code=="fr"}
+                   {assign var="error_message" value="Veuillez renseigner une adresse email."}
+                {elseif  $language.language_code=="en"}
+                    {assign var="error_message" value="Please fill in an email address."}
+                {/if}
+
             {elseif $field.name=="address1"}
-              {assign var="error_message" value="Veuillez renseigner une adresse."}
+              
+              {if $language.language_code=="fr"}
+                   {assign var="error_message" value="Veuillez renseigner une adresse."}
+                {elseif  $language.language_code=="en"}
+                    {assign var="error_message" value="Please fill in an address."}
+                {/if}
+
             {elseif $field.name=="postcode"}
-              {assign var="error_message" value="Veuillez renseigner un code postal."}
+              
+              {if $language.language_code=="fr"}
+                   {assign var="error_message" value="Veuillez renseigner un code postal."}
+                {elseif  $language.language_code=="en"}
+                    {assign var="error_message" value="Please enter a postal code."}
+                {/if}
+
             {elseif $field.name=="city"}
-              {assign var="error_message" value="Veuillez renseigner une ville."}
+              
+              {if $language.language_code=="fr"}
+                   {assign var="error_message" value="Veuillez renseigner une ville."}
+                {elseif  $language.language_code=="en"}
+                    {assign var="error_message" value="Please enter a city."}
+                {/if}
+
             {else}
               {assign var="error_message" value=""}
             {/if}
