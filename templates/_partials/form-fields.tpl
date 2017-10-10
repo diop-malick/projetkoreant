@@ -170,7 +170,7 @@
 
                 {if $language.language_code=="fr"}
                    {assign var="error_message" value="Veuillez renseigner le prénom."}
-                {elseif  $language.language_code=="en"}
+                {elseif  $language.language_code=="en-us"}
                     {assign var="error_message" value="Please fill in the first name."}
                 {/if}
 
@@ -178,7 +178,7 @@
 
               {if $language.language_code=="fr"}
                    {assign var="error_message" value="Veuillez renseigner le nom."}
-                {elseif  $language.language_code=="en"}
+                {elseif  $language.language_code=="en-us"}
                     {assign var="error_message" value="Please fill in the name."}
                 {/if}
 
@@ -186,7 +186,7 @@
               
               {if $language.language_code=="fr"}
                    {assign var="error_message" value="Veuillez renseigner une adresse email."}
-                {elseif  $language.language_code=="en"}
+                {elseif  $language.language_code=="en-us"}
                     {assign var="error_message" value="Please fill in an email address."}
                 {/if}
 
@@ -194,7 +194,7 @@
               
               {if $language.language_code=="fr"}
                    {assign var="error_message" value="Veuillez renseigner une adresse."}
-                {elseif  $language.language_code=="en"}
+                {elseif  $language.language_code=="en-us"}
                     {assign var="error_message" value="Please fill in an address."}
                 {/if}
 
@@ -202,7 +202,7 @@
               
               {if $language.language_code=="fr"}
                    {assign var="error_message" value="Veuillez renseigner un code postal."}
-                {elseif  $language.language_code=="en"}
+                {elseif  $language.language_code=="en-us"}
                     {assign var="error_message" value="Please enter a postal code."}
                 {/if}
 
@@ -210,7 +210,7 @@
               
               {if $language.language_code=="fr"}
                    {assign var="error_message" value="Veuillez renseigner une ville."}
-                {elseif  $language.language_code=="en"}
+                {elseif  $language.language_code=="en-us"}
                     {assign var="error_message" value="Please enter a city."}
                 {/if}
 
