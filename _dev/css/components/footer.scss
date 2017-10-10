@@ -97,6 +97,9 @@ footer h3 {
 }
 .googleplus {
 	background-image: url(../img/gplus.svg);
+	&:hover {
+		background-color: #dd4b39;
+	}
 }
 #block_myaccount_infos {
 	.myaccount-title a {
@@ -105,6 +108,9 @@ footer h3 {
 }
 .pinterest {
 	background-image: url(../img/pinterest.svg);
+	&:hover {
+		background-color: #bd081c;
+	}
 }
 .vimeo {
 	background-image: url(../img/vimeo.svg);
