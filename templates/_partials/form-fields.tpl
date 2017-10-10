@@ -165,6 +165,7 @@
                   {l s='Veuillez renseigner un code postal.' d='Shop.Forms.Errors'}
                   {l s='Veuillez renseigner une ville.' d='Shop.Forms.Errors'}
               *}
+              {$language.language_code}
             {if $field.name=="firstname"}
 
                 {if $language.language_code=="fr"}
