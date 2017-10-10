@@ -132,7 +132,7 @@
 
         {if $language.language_code=="fr"}
                    {assign var="error_message" value="Veuillez renseigner un mot de passe."}
-        {elseif  $language.language_code=="en-us"}
+        {elseif $language.language_code=="en-us"}
                     {assign var="error_message" value="Please enter a password."}
         {/if}
 
