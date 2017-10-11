@@ -27,7 +27,7 @@ function createSpin() {
 }
 
 $(document).ready(() => {
-	let lastAction = "";
+	let lastValue = $(spinnerSelector).prop("defaultValue");
 	let productLineInCartSelector = ".js-cart-line-product-quantity";
 	let promises = [];
 
@@ -138,18 +138,16 @@ $(document).ready(() => {
 
 		let $quantityInput = getTouchSpinInput($target);
 
+		console.log(lastValue);
+
 		if (
 			typeof cartAction === "undefined" ||
-			(parseInt($quantityInput.val()) ===
-				parseInt($quantityInput.attr("min")) &&
-				((cartAction.type === "decreaseProductQuantity" &&
-					cartAction.type === lastAction) ||
-					(cartAction.type === "decreaseProductQuantity" && lastAction === "")))
+			(lastValue == 1 && cartAction.type === "decreaseProductQuantity")
 		) {
 			return;
 		}
 
-		lastAction = cartAction.type;
+		lastValue = $quantityInput.val();
 
 		abortPreviousRequests();
 		$.ajax({
