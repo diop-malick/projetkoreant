@@ -85,9 +85,26 @@
           </div>
           <div class="col-sm-6 col-xs-12 qty">
             <div class="row">
-              <div class="col-xs-5 text-sm-right text-xs-left">{$product.price}</div>
+              <div class="col-xs-5 text-sm-right text-xs-left">
+                {* $product.price*}
+
+                {if $language.language_code=="fr"}
+                    {$product.product_price_wt|replace:'.':','}&nbsp;{$currency.sign}
+                {elseif $language.language_code=="en-us"}
+                    {$product.product_price_wt|replace:'.':','}&nbsp;{$currency.sign}
+                {/if}
+
+              </div>
               <div class="col-xs-2">{$product.quantity}</div>
-              <div class="col-xs-5 text-xs-right bold">{$product.total}</div>
+              <div class="col-xs-5 text-xs-right bold">
+                {*$product.total*}
+
+                {if $language.language_code=="fr"}
+                   {$currency.sign} {$product.total_wt|string_format:"%.2f"|replace:'.':','}
+                {elseif $language.language_code=="en-us"}
+                    {$currency.sign} {$product.total_wt|string_format:"%.2f"|replace:'.':','}
+                {/if}
+              </div>
             </div>
           </div>
         </div>
