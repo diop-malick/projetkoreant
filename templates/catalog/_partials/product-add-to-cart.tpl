@@ -60,11 +60,7 @@
               {else}
                 <i class="material-icons product-unavailable">&#xE14B;</i>
               {/if}
-              {if $product.availability_message === {l s='Product available with different options' d='Shop.Theme.Catalog'}}                
-                {l s='There are not enough products in stock' d='Shop.Notifications.Error'}
-              {else}
-                {$product.availability_message}
-              {/if}
+              {$product.availability_message}
             {/if}
           </span>
         {/block}
