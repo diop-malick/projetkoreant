@@ -91,7 +91,7 @@
                 {if $language.language_code=="fr"}
                     {$product.product_price_wt|replace:'.':','}&nbsp;{$currency.sign}
                 {elseif $language.language_code=="en-us"}
-                    {$product.product_price_wt|replace:'.':','}&nbsp;{$currency.sign}
+                    {$currency.sign} {$product.product_price_wt|replace:'.':','}
                 {/if}
 
               </div>
@@ -100,7 +100,7 @@
                 {*$product.total*}
 
                 {if $language.language_code=="fr"}
-                   {$currency.sign} {$product.total_wt|string_format:"%.2f"|replace:'.':','}
+                    {$product.total_wt|string_format:"%.2f"|replace:'.':','}&nbsp;{$currency.sign}
                 {elseif $language.language_code=="en-us"}
                     {$currency.sign} {$product.total_wt|string_format:"%.2f"|replace:'.':','}
                 {/if}
