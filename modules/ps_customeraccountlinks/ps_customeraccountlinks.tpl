@@ -40,12 +40,15 @@
         {l s='Your account' d='Shop.Theme.Customeraccount'}
       </a>
     </li>
-    {foreach from=$my_account_urls|@array_slice:0:2 item=my_account_url}
-        <li>
-          <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">
-            {$my_account_url.title}
-          </a>
-        </li>
-    {/foreach}
+    <li>
+      <a href="{$urls.pages.history}" title="{l s='Order history and details' d='Shop.Theme.Customeraccount'}" rel="nofollow">
+        {l s='Order history and details' d='Shop.Theme.Customeraccount'}
+      </a>
+    </li>
+    <li>
+      <a href="{$urls.pages.identity}" title="{l s='Information' d='Shop.Theme.Customeraccount'}" rel="nofollow">
+        {l s='Information' d='Shop.Theme.Customeraccount'}
+      </a>
+    </li>
 	</ul>
 </div>
