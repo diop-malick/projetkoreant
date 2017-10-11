@@ -5,7 +5,7 @@
 		input[type="text"] {
 			&:focus {
 				outline: 1px $brand-primary solid;
-				color: $gray-dark;
+				color: #000;
 				background: white;
 				+ button .search {
 					color: $brand-primary;
@@ -14,7 +14,7 @@
 			border: 1px solid;
 			padding: 15px;
 			background: transparent;
-			color: $gray;
+			color: $gray-darker;
 		}
 		button[type="submit"] {
 			position: absolute;
