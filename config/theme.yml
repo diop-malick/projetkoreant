@@ -95,7 +95,7 @@ global_settings:
       scope: [products, manufacturers, suppliers]
     home_default:
       width: 260
-      height: 180
+      height: 140
       scope: [products]
     list_default:
       width: 510
