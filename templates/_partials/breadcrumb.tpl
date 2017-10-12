@@ -25,9 +25,11 @@
 {if $urls.pages.stores === $urls.current_url}
   {$breadcrumb.links[] = ['title' => {l s='Our stores' d='Shop.Theme'}, 'url' => $urls.pages.stores]}
 {/if}
-
 {if {url entity='best-sales'} === {$urls.current_url|replace:"http:":""} || {url entity='best-sales'} === {$urls.current_url|replace:"https:":""}}
   {$breadcrumb.links[] = ['title' => {l s='Best Sellers' d='Shop.Theme.Catalog'}, 'url' => {url entity='best-sales'}]}
+{/if}
+{if count($breadcrumb.links) > 2}
+  {$breadcrumb.links = array_slice($breadcrumb.links,1)}
 {/if}
 <nav data-depth="{$breadcrumb.links|count}" class="breadcrumb text-md-right">
   <div class="container no-gutter">
@@ -35,11 +37,11 @@
       {foreach from=$breadcrumb.links item=path name=breadcrumb}
         {block name='breadcrumb_item'}
           <li itemprop="itemListElement" class="hidden-sm-down" itemscope itemtype="http://schema.org/ListItem">
-          {if $smarty.foreach.breadcrumb.iteration != 2 && $smarty.foreach.breadcrumb.iteration != 4}
+          {if $path.url !== $urls.current_url}
             <a itemprop="item" href="{$path.url}">
           {/if}
               <span itemprop="name">{$path.title}</span>
-          {if $smarty.foreach.breadcrumb.iteration != 2 && $smarty.foreach.breadcrumb.iteration != 4}
+          {if $path.url !== $urls.current_url}
             </a>
           {/if}
             <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
