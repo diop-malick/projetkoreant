@@ -49,7 +49,6 @@
 
   <section id="main" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
-
     <div class="row">
       <div class="col-md-6 hidden-sm-down">
         {block name='page_content_container'}

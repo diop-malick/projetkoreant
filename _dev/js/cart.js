@@ -138,8 +138,6 @@ $(document).ready(() => {
 
 		let $quantityInput = getTouchSpinInput($target);
 
-		console.log(lastValue);
-
 		if (
 			typeof cartAction === "undefined" ||
 			(lastValue == 1 && cartAction.type === "decreaseProductQuantity")
@@ -161,7 +159,6 @@ $(document).ready(() => {
 		})
 			.then(function(resp) {
 				$quantityInput.val(resp.quantity);
-
 				// Refresh cart preview
 				prestashop.emit("updateCart", {
 					reason: dataset
