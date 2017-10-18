@@ -31,10 +31,11 @@ $(document).ready(function() {
 	imageScrollBox();
 
 	prestashop.on("updateCart", function(event) {
-		prestashop.emit("error", {
-			eventType: "updateShoppingCart",
-			resp: event.resp
-		});
+		event.resp.hasError &&
+			prestashop.emit("error", {
+				eventType: "updateShoppingCart",
+				resp: event.resp
+			});
 	});
 
 	prestashop.on("updatedProduct", function(event) {
