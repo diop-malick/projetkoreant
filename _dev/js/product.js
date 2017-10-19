@@ -31,7 +31,7 @@ $(document).ready(function() {
 	imageScrollBox();
 
 	prestashop.on("updateCart", function(event) {
-		event.resp.hasError &&
+		event.resp && event.resp.hasError &&
 			prestashop.emit("error", {
 				eventType: "updateShoppingCart",
 				resp: event.resp
