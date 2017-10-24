@@ -63,7 +63,7 @@ $(document).ready(() => {
   let dropDown = new DropDown(dropDownEl);
   let topMenu = new TopMenu(topMenuEl);
   let productMinitature = new ProductMinitature();
-  let productSelect  = new ProductSelect();
+  let productSelect = new ProductSelect();
   dropDown.init();
   form.init();
   topMenu.init();
@@ -72,14 +72,25 @@ $(document).ready(() => {
   getTabContentIfAvailable($('.product-accordion #product-accordion-payment'));
   getTabContentIfAvailable($('.product-accordion #product-accordion-shipping'));
   ga('send', 'pageview');
+  $('.ido-top-banner .banner-link,.ido-top-banner .scroll').click((event) => {
+    event.preventDefault();
+    $('html, body').animate({
+      scrollTop: $('.ido-top-banner').offset().top + $('.ido-top-banner').height() + 10
+
+    }, 600)
+  });
+
 });
 
-function getTabContentIfAvailable($tab){
-  if($tab.length){
+function getTabContentIfAvailable($tab) {
+  if ($tab.length) {
     $.get($tab.data('url'), (content) => {
       $tab.html($(content).find('.page-cms').contents());
     }).fail((resp) => {
-      prestashop.emit('handleError', {eventType: 'getTabContent', resp: resp});
+      prestashop.emit('handleError', {
+        eventType: 'getTabContent',
+        resp: resp
+      });
     });
   }
 }
