@@ -229,7 +229,7 @@
 		background: rgba(255, 255, 255, 0.7);
 		text-align: center;
 		cursor: pointer;
-		@include transition(opacity .7s ease-in-out);
+		@include transition(opacity 0.7s ease-in-out);
 		&:hover {
 			opacity: 1;
 		}
@@ -348,12 +348,13 @@
 	.cart-content {
 		padding-left: $extra-large-space;
 		.cart-content-btn {
-			display: inline-flex;
+			display: block;
 			button {
 				margin-right: rem(5px);
 			}
 			.btn {
 				white-space: inherit;
+				width: 100%;
 			}
 		}
 	}
@@ -616,7 +617,7 @@ li.product-flag {
 		background-position: rem(4px) rem(4px);
 		cursor: pointer;
 		margin-left: rem(8px);
-		@include transition(all .2s ease-in);
+		@include transition(all 0.2s ease-in);
 		a {
 			display: block;
 			width: 100%;
@@ -677,6 +678,16 @@ li.product-flag {
 		}
 		.modal-body {
 			padding: rem(16px);
+		}
+	}
+}
+
+@media (min-width: 396px) {
+	#blockcart-modal {
+		.cart-content {
+			.cart-content-btn {
+				display: inline-flex;
+			}
 		}
 	}
 }
