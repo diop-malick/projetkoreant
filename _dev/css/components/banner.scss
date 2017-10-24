@@ -1,227 +1,238 @@
 .ido-top-banner,
 .ido-bottom-banner {
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  a {
-    color: #fff;
-    display: block;
-  }
-  .cover {
-    text-align: center;
-  }
-  .ido-banner-content {
-    max-width: 33em;
-    padding: 1em 2em;
-    text-align: center;
-    h1 {
-      font-size: 3.25em;
-      color: #fff !important;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 10em;
-    }
-    a {
-      font-weight: 900;
-      &:hover {
-        color: $brand-primary;
-      }
-    }
-    .banner-link {
-      padding: 1em 2em;
-      border: 1px solid;
-      font-size: 105%;
-      display: block;
-      width: 100%;
-      max-width: 20em;
-      margin: 0 auto;
-    }
-  }
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	a {
+		color: #fff;
+		display: block;
+	}
+	.cover {
+		text-align: center;
+	}
+	.ido-banner-content {
+		max-width: 33em;
+		padding: 1em 2em;
+		text-align: center;
+		margin: 0 auto;
+		h1 {
+			font-size: 3.25em;
+			color: #fff !important;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 10em;
+		}
+		a {
+			font-weight: 900;
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+		.banner-link {
+			padding: 1em 2em;
+			border: 1px solid;
+			font-size: 105%;
+			display: block;
+			width: 100%;
+			max-width: 20em;
+			margin: 0 auto;
+		}
+	}
 }
 
 .ido-top-banner {
-  min-height: 83vh;
-  background-size: cover;
-  background-image: url(../img/banner.png);
-  #custom-text {
-    padding: rem(32px) 0 rem(32px);
-    font-size: 80%;
-    p {
-      color: #fff;
-      font-weight: 100;
-      font-size: 1em;
-      line-height: 1.5em;
-      margin-bottom: 0.2em;
-    }
-  }
-  .ido-top-banner-row {
-    margin-bottom: 0;
-    margin-top: 2rem;
-    img {
-      max-width: 7.25em;
-    }
-    .row {
-      box-shadow: 0px 4px 6px -6px rgba(255, 255, 255, 1);
-      &:after {
-        display: block;
-        position: relative;
-        height: 2px;
-        width: 145%;
-        background: linear-gradient( 90deg, rgba(200, 200, 200, 0.05), rgba(225, 225, 225, 0.15) 1%, rgba(225, 225, 225, 0.25) 4%, rgba(255, 255, 255, 0.9) 8%, rgba(255, 255, 255, 0.9) 92%, rgba(225, 225, 225, 0.25) 96%, rgba(225, 225, 225, 0.15) 99%, rgba(200, 200, 200, 0.05));
-        bottom: -2px;
-        left: -10%;
-      }
-      &.block-right {
-        margin-top: 2em;
-        &:after {
-          left: auto;
-          right: 33%;
-        }
-      }
-    }
-  }
-  h1 {
-    min-height: 45vh;
-    padding-top: 18vh;
-  }
-  h2 {
-    padding-top: rem(16px);
-    margin-bottom: 0.2em;
-    font-family: "PT Serif" !important;
-    color: #fff !important;
-    font-size: 120%;
-  }
-  h3 {
-    font-size: 95%;
-  }
-  .scroll {
-    display: block;
-    position: relative;
-    bottom: -4em;
-    margin-bottom: 1em;
-    .material-icons {
-      font-size: 350%;
-      color: #fff;
-      cursor: pointer;
-      &:hover {
-        color: $brand-primary;
-      }
-    }
-  }
+	min-height: 83vh;
+	background-size: cover;
+	background-image: url(../img/banner.png);
+	#custom-text {
+		padding: rem(32px) 0 rem(32px);
+		font-size: 80%;
+		p {
+			color: #fff;
+			font-weight: 100;
+			font-size: 1em;
+			line-height: 1.5em;
+			margin-bottom: 0.2em;
+		}
+	}
+	.ido-top-banner-row {
+		margin-bottom: 0;
+		margin-top: 2rem;
+		img {
+			max-width: 7.25em;
+		}
+		.row {
+			box-shadow: 0px 4px 6px -6px rgba(255, 255, 255, 1);
+			&:after {
+				display: block;
+				position: relative;
+				height: 2px;
+				width: 145%;
+				background: linear-gradient(
+					90deg,
+					rgba(200, 200, 200, 0.05),
+					rgba(225, 225, 225, 0.15) 1%,
+					rgba(225, 225, 225, 0.25) 4%,
+					rgba(255, 255, 255, 0.9) 8%,
+					rgba(255, 255, 255, 0.9) 92%,
+					rgba(225, 225, 225, 0.25) 96%,
+					rgba(225, 225, 225, 0.15) 99%,
+					rgba(200, 200, 200, 0.05)
+				);
+				bottom: -2px;
+				left: -10%;
+			}
+			&.block-right {
+				margin-top: 2em;
+				&:after {
+					left: auto;
+					right: 33%;
+				}
+			}
+		}
+	}
+	h1 {
+		min-height: 45vh;
+		padding-top: 18vh;
+	}
+	h2 {
+		padding-top: rem(16px);
+		margin-bottom: 0.2em;
+		font-family: "PT Serif" !important;
+		color: #fff !important;
+		font-size: 120%;
+	}
+	h3 {
+		font-size: 95%;
+	}
+	.scroll {
+		display: block;
+		position: relative;
+		bottom: -4em;
+		margin-bottom: 1em;
+		.material-icons {
+			font-size: 350%;
+			color: #fff;
+			cursor: pointer;
+			&:hover {
+				color: $brand-primary;
+			}
+		}
+	}
 }
 
 .ido-bottom-banner {
-  background-image: url(../img/banner-nat-expo-mob.png);
-  background-size: contain;
-  min-height: 48vh;
-  margin-top: -0.725em;
-  h1 {
-    padding-top: 1.25em;
-    margin-bottom: 1.5em;
-  }
-  a {
-    min-height: 48vh;
-  }
+	background-image: url(../img/banner-nat-expo-mob.png);
+	background-size: contain;
+	min-height: 48vh;
+	margin-top: -0.725em;
+	h1 {
+		padding-top: 1.25em;
+		margin-bottom: 1.5em;
+	}
+	a {
+		min-height: 48vh;
+	}
 }
 
 @include media-breakpoint-up(sm) {
-  .ido-top-banner,
-  .ido-bottom-banner {
-    .ido-banner-content {
-      .banner-link {
-        display: inline;
-      }
-    }
-  }
+	.ido-top-banner,
+	.ido-bottom-banner {
+		.ido-banner-content {
+			.banner-link {
+				display: inline;
+			}
+		}
+	}
 }
 
 @media (min-width: 520px) {
-  .ido-bottom-banner {
-    min-height: 68vh;
-    a {
-      min-height: 68vh;
-    }
-  }
+	.ido-bottom-banner {
+		min-height: 68vh;
+		a {
+			min-height: 68vh;
+		}
+	}
 }
 
 @media (min-width: 768px) {
-  .ido-top-banner #custom-text {
-    padding: rem(200px) 0 rem(32px);
-  }
-  .ido-top-banner {
-    .ido-top-banner-row {
-      margin-left: -0.8125em;
-      width: 98%;
-    }
-  }
+	.ido-top-banner #custom-text {
+		padding: rem(200px) 0 rem(32px);
+	}
+	.ido-top-banner {
+		.ido-top-banner-row {
+			margin-left: -0.8125em;
+			width: 98%;
+		}
+	}
 }
 
 @media (min-width: 860px) {
-  .ido-top-banner {
-    .ido-top-banner-row {
-      margin-left: -0.40625em;
-      width: 98%;
-    }
-  }
-  .ido-bottom-banner {
-    min-height: 84vh;
-    a {
-      min-height: 84vh;
-    }
-  }
+	.ido-top-banner {
+		.ido-top-banner-row {
+			margin-left: -0.40625em;
+			width: 98%;
+		}
+	}
+	.ido-bottom-banner {
+		min-height: 84vh;
+		a {
+			min-height: 84vh;
+		}
+	}
 }
 
 @media (min-width: 920px) {
-  .ido-top-banner #custom-text {
-    padding: rem(104px) 0 rem(32px);
-  }
-  .ido-top-banner {
-    .ido-top-banner-row {
-      width: 100%;
-    }
-  }
+	.ido-top-banner #custom-text {
+		padding: rem(104px) 0 rem(32px);
+	}
+	.ido-top-banner {
+		.ido-top-banner-row {
+			width: 100%;
+		}
+	}
 }
 
 @media (min-width: 1024px) {
-  .ido-top-banner {
-    #custom-text {
-      padding: rem(120px) 0 rem(32px);
-      font-size: 90%;
-    }
-    .ido-top-banner-row {
-      width: 99%;
-      margin-top: 0.25rem;
-    }
-  }
-  .ido-bottom-banner {
-    background-image: url(../img/banner-nat-expo-desk.png);
-    background-size: contain;
-    min-height: 30vh;
-    a {
-      min-height: 30vh;
-    }
-  }
+	.ido-top-banner {
+		#custom-text {
+			padding: rem(120px) 0 rem(32px);
+			font-size: 90%;
+		}
+		.ido-top-banner-row {
+			width: 99%;
+			margin-top: 0.25rem;
+		}
+	}
+	.ido-bottom-banner {
+		background-image: url(../img/banner-nat-expo-desk.png);
+		background-size: contain;
+		min-height: 30vh;
+		a {
+			min-height: 30vh;
+		}
+	}
 }
 
 @media (min-width: 1366px) {
-  .ido-top-banner {
-    #custom-text {
-      padding: rem(72px) 0 rem(72px);
-      font-size: 100%;
-    }
-  }
-  .ido-bottom-banner {
-    min-height: 40vh;
-    a {
-      min-height: 40vh;
-    }
-  }
+	.ido-top-banner {
+		#custom-text {
+			padding: rem(72px) 0 rem(72px);
+			font-size: 100%;
+		}
+	}
+	.ido-bottom-banner {
+		min-height: 40vh;
+		a {
+			min-height: 40vh;
+		}
+	}
 }
 
 @media (min-width: 1420px) {
-  .ido-top-banner {
-    #custom-text {
-      padding: rem(120px) 0 rem(32px);
-    }
-  }
+	.ido-top-banner {
+		#custom-text {
+			padding: rem(120px) 0 rem(32px);
+		}
+	}
 }
