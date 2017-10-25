@@ -31,7 +31,7 @@
       </div>
 
       <div class="form-group row">
-        <label class="col-md-3 form-control-label">{l s='Email address' d='Shop.Forms.Labels'}</label>
+        <label class="col-md-3 form-control-label">{l s='Email address' d='Shop.Forms.Labels'}<span class="required_field">*</span></label>
         <div class="col-md-6">
           <input
             class="form-control"
@@ -73,7 +73,7 @@
       {/if}
 
       <div class="form-group row">
-        <label class="col-md-3 form-control-label">{l s='Message' d='Shop.Forms.Labels'}</label>
+        <label class="col-md-3 form-control-label">{l s='Message' d='Shop.Forms.Labels'}<span class="required_field">*</span></label>
         <div class="col-md-9">
           <textarea
             class="form-control"
