@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="js-product-list">
-  <h1 class="hidden-sm-down">
+  <h1>
     {if $listing.label|strstr:'Category: '}{$listing.label|replace:'Category: ':''}
     {elseif $listing.label|strstr:'Catégorie : '}{$listing.label|replace:'Catégorie : ':''}
     {else}{$listing.label} 
