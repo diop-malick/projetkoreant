@@ -24,6 +24,7 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
+    <div id="_mobile_language_selector"></div>
     <div class="container text-md-right no-gutter">
       {hook h='displayBanner'}
     </div>
@@ -80,8 +81,7 @@
       {/block}
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
         <div class="js-top-menu-bottom">
-          <div id="_mobile_currency_selector"></div>
-          <div id="_mobile_language_selector"></div>
+          <div id="_mobile_currency_selector"></div>          
           <div id="_mobile_contact_link"></div>
         </div>
       </div>
