@@ -72,7 +72,7 @@ $(document).ready(() => {
   getTabContentIfAvailable($('.product-accordion #product-accordion-payment'));
   getTabContentIfAvailable($('.product-accordion #product-accordion-shipping'));
   ga('send', 'pageview');
-  $('.ido-top-banner .banner-link,.ido-top-banner .scroll').click((event) => {
+  $('.ido-top-banner .scroll').click((event) => {
     event.preventDefault();
     $('html, body').animate({
       scrollTop: $('.ido-top-banner').offset().top + $('.ido-top-banner').height() + 10
