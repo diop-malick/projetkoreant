@@ -66,7 +66,7 @@
             <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
           </a>
         </div>
-        <div class="col-md-10 col-sm-12">
+        <div class="col-md-10 col-sm-12 no-gutter">
           <div class="row">
             {hook h='displayTop'}
             <div class="col-md-4 no-gutter hidden-sm-down user-cart">
