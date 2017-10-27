@@ -43,7 +43,7 @@ body#checkout {
 			color: #000 !important;
 		}
 		.content {
-			padding: 0 rem(37px);
+			padding: 0 1.625em;
 		}
 		.step-edit {
 			text-transform: lowercase;
@@ -217,6 +217,9 @@ body#checkout {
 			margin-bottom: rem(15px);
 			label {
 				text-align: inherit;
+				img {
+					margin-left: -0.6125em;
+				}
 			}
 		}
 		.carrier-delay,
@@ -446,7 +449,7 @@ body#checkout {
 		}
 		section.checkout-step {
 			.content {
-				padding: rem(15px);
+				padding: rem(15px) 1.625em;
 			}
 		}
 		.form-group {
