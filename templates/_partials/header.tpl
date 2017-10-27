@@ -24,7 +24,7 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    <div id="_mobile_language_selector"></div>
+    <div id="_mobile_language_selector" class="container"></div>
     <div class="container text-md-right no-gutter">
       {hook h='displayBanner'}
     </div>
