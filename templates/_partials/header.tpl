@@ -24,7 +24,7 @@
  *}
 {block name='header_banner'}
   <div class="header-banner">
-    <div id="_mobile_language_selector"></div>
+    <div id="_mobile_language_selector" class="container"></div>
     <div class="container text-md-right no-gutter">
       {hook h='displayBanner'}
     </div>
@@ -66,7 +66,7 @@
             <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
           </a>
         </div>
-        <div class="col-md-10 col-sm-12">
+        <div class="col-md-10 col-sm-12 no-gutter">
           <div class="row">
             {hook h='displayTop'}
             <div class="col-md-4 no-gutter hidden-sm-down user-cart">
