@@ -687,6 +687,11 @@ li.product-flag {
 		.cart-content {
 			.cart-content-btn {
 				display: inline-flex;
+				width: 100%;
+				.btn {
+					padding: 0.6125em 0.203125em;
+					font-size: 93%;
+				}
 			}
 		}
 	}
