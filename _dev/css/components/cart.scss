@@ -67,7 +67,7 @@
 }
 .block-promo {
 	.promo-code {
-		padding: 1.6rem;
+		padding: 1.6rem 0;
 		background: $gray-light;
 		text-align: center;
 		.alert-danger {
@@ -96,7 +96,7 @@
 		border: $gray 1px solid;
 		height: rem(40px);
 		text-indent: rem(10px);
-		width: 50%;
+		width: 58%;
 		+ button {
 			margin-top: -4px;
 			text-transform: capitalize;
