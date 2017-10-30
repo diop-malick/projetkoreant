@@ -38,7 +38,11 @@
         {block name='breadcrumb_item'}
           <li itemprop="itemListElement" class="hidden-sm-down" itemscope itemtype="http://schema.org/ListItem">
           {if $smarty.foreach.breadcrumb.iteration < 3}
-            <a itemprop="item" href="{$path.url}">
+              {if $smarty.foreach.breadcrumb.iteration == 1}
+                  <a itemprop="item" href="{$urls.base_url}">
+              {else}
+                    <a itemprop="item" href="{$path.url}">
+              {/if}
           {/if}
               <span itemprop="name">{$path.title}</span>
           {if $smarty.foreach.breadcrumb.iteration < 3}
