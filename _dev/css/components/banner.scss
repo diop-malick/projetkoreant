@@ -156,19 +156,21 @@
 }
 
 @media (min-width: 768px) {
-	.ido-top-banner #custom-text {
-		padding: rem(200px) 0 rem(32px);
-	}
 	.ido-top-banner {
-		.ido-top-banner-row {
-			margin-left: -0.8125em;
-			width: 98%;
-		}
+    background-size: 180%;
+    #custom-text {
+      padding: rem(200px) 0 rem(32px);
+      .ido-top-banner-row {
+        margin-left: -0.8125em;
+        width: 98%;
+      }
+    }		
 	}
 }
 
 @media (min-width: 860px) {
 	.ido-top-banner {
+     background-size: 160%;
 		.ido-top-banner-row {
 			margin-left: -0.40625em;
 			width: 98%;
@@ -183,26 +185,28 @@
 }
 
 @media (min-width: 920px) {
-	.ido-top-banner #custom-text {
-		padding: rem(104px) 0 rem(32px);
-	}
 	.ido-top-banner {
-		.ido-top-banner-row {
-			width: 100%;
-		}
+     background-size: 150%;
+     #custom-text {
+      padding: rem(112px) 0 rem(24px);
+      .ido-top-banner-row {
+        width: 100%;
+      }
+    }		
 	}
 }
 
 @media (min-width: 1024px) {
 	.ido-top-banner {
+    background-size: cover;
 		#custom-text {
 			padding: rem(120px) 0 rem(32px);
 			font-size: 90%;
-		}
-		.ido-top-banner-row {
-			width: 99%;
-			margin-top: 0.25rem;
-		}
+      .ido-top-banner-row {
+        width: 99%;
+        margin-top: 0.25rem;
+      }
+		}		
 	}
 	.ido-bottom-banner {
 		background-image: url(../img/banner-nat-expo-desk.png);
