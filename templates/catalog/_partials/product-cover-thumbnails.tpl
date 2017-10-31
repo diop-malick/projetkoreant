@@ -26,9 +26,9 @@
   {block name='product_cover'}
     <div class="product-cover">      
       {if $product.images|count <= 1}
-        <img class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
+        <img class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" itemprop="image">
       {else}
-        <img class="js-qv-product-cover" src="{$product.images[1].bySize.large_default.url}" alt="{$product.images[1].legend}" title="{$product.images[1].legend}" style="width:100%;" itemprop="image">
+        <img class="js-qv-product-cover" src="{$product.images[1].bySize.large_default.url}" alt="{$product.images[1].legend}" title="{$product.images[1].legend}" itemprop="image">
       {/if}
     </div>
   {/block}
