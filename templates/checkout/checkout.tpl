@@ -58,7 +58,7 @@
                 {render file='checkout/checkout-process.tpl' ui=$checkout_process}
               {/block}
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 no-gutter">
 
               {block name='cart_summary'}
                 {include file='checkout/_partials/cart-summary.tpl' cart = $cart}
