@@ -148,9 +148,9 @@
 
 @media (min-width: 520px) {
 	.ido-bottom-banner {
-		min-height: 68vh;
+		min-height: 58vh;
 		a {
-			min-height: 68vh;
+			min-height: 58vh;
 		}
 	}
 }
@@ -159,7 +159,7 @@
 	.ido-top-banner {
 		background-size: 200%;
 		#custom-text {
-			padding: rem(200px) 0 rem(32px);
+			padding: rem(260px) 0 rem(6px);
 			.ido-top-banner-row {
 				margin-left: -0.8125em;
 				width: 98%;
@@ -188,7 +188,7 @@
 	.ido-top-banner {
 		background-size: 180%;
 		#custom-text {
-			padding: rem(112px) 0 rem(24px);
+			padding: rem(180px) 0 rem(8px);
 			.ido-top-banner-row {
 				width: 100%;
 			}
