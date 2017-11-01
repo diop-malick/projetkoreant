@@ -214,6 +214,7 @@
 	position: relative;
 	img {
 		background: white;
+		width: 100%;
 	}
 	.layer {
 		@include display(flex);
