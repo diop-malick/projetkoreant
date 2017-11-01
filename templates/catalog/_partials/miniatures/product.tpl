@@ -38,7 +38,7 @@
         <div class="product-description">
 
           {block name='product_name'}
-            <h1 class="product-title hidden-md-up" itemprop="name">{$product.name|truncate:30:'...'}</h1>
+            <h1 class="product-title hidden-md-up" itemprop="name">{$product.name|substr:0:($product.name|strpos:" ")}<br>{$product.name|truncate:30:'...'|substr:($product.name|strpos:" "+1)}</h1>
           {/block}
 
           {block name='product_description_short'}
@@ -98,7 +98,7 @@
           {if $image.id_image != $product.cover.id_image}
             <div class="col-md-6 hidden-sm-down thumbnail-banner" style="background-image:linear-gradient(rgba(20,20,20,0.375),rgba(20,20,20,0.3),rgba(20,20,20,0.425)),url({$image.bySize.list_default.url})">
               {block name='product_name'}
-                <h1 class="product-title" itemprop="name">{$product.name|truncate:30:'...'}</h1>
+                <h1 class="product-title" itemprop="name">{$product.name|substr:0:($product.name|strpos:" ")}<br>{$product.name|truncate:30:'...'|substr:($product.name|strpos:" "+1)}</h1>
               {/block}
               <a href="{$product.url}">{l s='SHOW ME MORE' d='Shop.Theme'}</a>
               {break}
