@@ -171,9 +171,12 @@
 @media (min-width: 860px) {
 	.ido-top-banner {
 		background-size: 190%;
-		.ido-top-banner-row {
-			margin-left: -0.40625em;
-			width: 98%;
+		#custom-text {
+			padding: rem(210px) 0 rem(6px);
+			.ido-top-banner-row {
+				margin-left: -0.40625em;
+				width: 98%;
+			}
 		}
 	}
 	.ido-bottom-banner {
@@ -188,7 +191,7 @@
 	.ido-top-banner {
 		background-size: 180%;
 		#custom-text {
-			padding: rem(180px) 0 rem(8px);
+			padding: rem(200px) 0 rem(8px);
 			.ido-top-banner-row {
 				width: 100%;
 			}
