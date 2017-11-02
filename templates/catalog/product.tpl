@@ -83,7 +83,7 @@
 
             {block name='page_header_container'}
               {block name='page_header'}
-                <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+                <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name|substr:0:($product.name|strpos:" ")}<br>{$product.name|substr:($product.name|strpos:" ")}{/block}</h1>
               {/block}
             {/block}
             
