@@ -44,7 +44,7 @@
         </div>
 
         {block name='continue_shopping'}
-          <a class="label" href="{$urls.pages.index}">
+          <a class="label continue-shopping" href="#">
             <i class="material-icons">chevron_left</i>{l s='Continue shopping' d='Shop.Theme.Actions'}
           </a>
         {/block}
