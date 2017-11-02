@@ -63,8 +63,4 @@ $(document).ready(() => {
     params.deliveryOption.find(".carrier-extra-content").slideDown();
   });
 
-  $('.continue-shopping').on("click", function(e) {
-        e.preventDefault();
-        history.back(1);
-     });
 });

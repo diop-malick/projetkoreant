@@ -44,7 +44,7 @@
         </div>
 
         {block name='continue_shopping'}
-          <a class="label continue-shopping" href="#">
+          <a class="label continue-shopping" href="#" onclick="goBack()">
             <i class="material-icons">chevron_left</i>{l s='Continue shopping' d='Shop.Theme.Actions'}
           </a>
         {/block}

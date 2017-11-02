@@ -39,3 +39,9 @@
     {/foreach}
   </script>
 {/if}
+
+<script type="text/javascript">
+  	function goBack() {
+    window.history.back();
+	}
+ </script>
