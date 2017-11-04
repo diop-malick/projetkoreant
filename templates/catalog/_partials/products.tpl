@@ -33,9 +33,9 @@
       ({$listing.pagination.total_items} 
       {if {$smarty.get.controller} eq 'category'}
         {if $listing.pagination.total_items==1}
-          {l s='product' d='Shop.Theme'})
+          {l s='product' d='Shop.Theme.Catalog'})
         {else}
-          {l s='products' d='Shop.Theme'})
+          {l s='product' d='Shop.Theme.Catalog'}s)
         {/if}
       {elseif {$smarty.get.controller} eq 'search'}
         {if $listing.pagination.total_items==1}
