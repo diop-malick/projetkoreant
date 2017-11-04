@@ -157,6 +157,7 @@
 
 @media (min-width: 768px) {
 	.ido-top-banner {
+		min-height: 56em;
 		background-size: 200%;
 		#custom-text {
 			padding: rem(160px) 0 rem(6px);
@@ -174,33 +175,9 @@
 	}
 }
 
-@media (min-width: 860px) {
-	.ido-top-banner {
-		background-size: 190%;
-		#custom-text {
-			padding: rem(210px) 0 rem(6px);
-			.ido-top-banner-row {
-				margin-left: -0.40625em;
-				width: 98%;
-			}
-		}
-	}
-}
-
-@media (min-width: 920px) {
-	.ido-top-banner {
-		background-size: 180%;
-		#custom-text {
-			padding: rem(200px) 0 rem(8px);
-			.ido-top-banner-row {
-				width: 100%;
-			}
-		}
-	}
-}
-
 @media (min-width: 1024px) {
 	.ido-top-banner {
+		min-height: 83vh;
 		background-size: cover;
 		#custom-text {
 			padding: rem(120px) 0 rem(32px);
@@ -218,6 +195,15 @@
 		a {
 			min-height: 30vh;
 		}
+	}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+	.ido-top-banner {
+		background-size: 135%;
+	}
+	.ido-top-banner #custom-text {
+		padding: 5rem 0 2rem;
+		font-size: 90%;
 	}
 }
 
