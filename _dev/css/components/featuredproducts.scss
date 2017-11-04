@@ -70,7 +70,7 @@
 		margin-top: rem(6px);
 		font-size: rem(32px);
 		text-align: left;
-		color: #777 !important;
+		color: #000 !important;
 	}
 	.product-title {
 		text-align: center;
@@ -160,7 +160,7 @@
 				margin-left: rem(139px);
 				&::before {
 					content: "\E30A";
-					font-family: 'Material Icons';
+					font-family: "Material Icons";
 					vertical-align: middle;
 					margin: rem(5px);
 				}
