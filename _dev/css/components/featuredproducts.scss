@@ -187,6 +187,8 @@
 		display: inline-block;
 		margin-top: rem(17px);
 		text-indent: -0.203125em;
+		font-weight: 900;
+		text-decoration: underline;
 		&:hover {
 			color: $brand-primary;
 		}
