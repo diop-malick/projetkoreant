@@ -171,6 +171,9 @@
 				p {
 					display: none;
 				}
+				.block-right {
+					margin-top: 4em;
+				}
 			}
 		}
 	}
@@ -187,7 +190,7 @@
 		min-height: 83vh;
 		background-size: cover;
 		#custom-text {
-			padding: rem(120px) 0 rem(32px);
+			padding: rem(150px) 0 rem(32px);
 			font-size: 90%;
 			.ido-top-banner-row {
 				width: 99%;
@@ -198,6 +201,9 @@
 				h3,
 				p {
 					display: block;
+				}
+				.block-right {
+					margin-top: 2em;
 				}
 			}
 		}
