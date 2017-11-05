@@ -86,7 +86,6 @@
         {/block}
 
       {elseif $field.type === 'checkbox'}
-          hi its me
         {block name='form_field_item_checkbox'}
           <span class="custom-checkbox">
             <input name="{$field.name}" {if $field.name === 'optin_partner'}onclick="$('.optin_partner').collapse('toggle')"{/if} type="checkbox" value="1" {if $field.value}checked="checked"{/if} {if $field.required}required{/if}>
