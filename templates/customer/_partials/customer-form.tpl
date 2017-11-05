@@ -26,7 +26,12 @@
   {block name='customer_form_errors'}
     {include file='_partials/form-errors.tpl' errors=$errors['']}
   {/block}
-
+  {if isset($formFields["company"]) && isset($formFields["siret"])}
+    {$formFields["optin_partner"] = ["name" => 'optin_partner',"type" => 'checkbox',"required" => false,"label" => {l s='Become our partner' d='Shop.Theme.Actions'},"value" => null, errors => []]}
+    {$formFields=$formFields|array_diff_key:(['company']|array_flip)|array_merge:(['company' => $formFields['company']])}
+    {$formFields=$formFields|array_diff_key:(['siret']|array_flip)|array_merge:(['siret' => $formFields['siret']])}
+  {/if}
+    
 <form action="{block name='customer_form_actionurl'}{$action}{/block}" id="customer-form" class="js-customer-form" method="post">
   <section>
     {block "form_fields"}
@@ -51,4 +56,9 @@
   {/block}
 
 </form>
+<div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
 {/block}

@@ -30,7 +30,7 @@
 
 {else}
 
-  <div class="form-group row {if !empty($field.errors)}has-error{/if}">
+  <div class="form-group row {if !empty($field.errors)}has-error{/if} {if $field.name === 'company' || $field.name === 'siret'}collapse optin_partner{/if}">
     <label class="col-md-3 form-control-label{if $field.required} required{/if}">
       {if $field.type !== 'checkbox'}
         {$field.label} {if $field.required}<span class="required_field">*</span>{/if}
@@ -86,10 +86,10 @@
         {/block}
 
       {elseif $field.type === 'checkbox'}
-
+          hi its me
         {block name='form_field_item_checkbox'}
           <span class="custom-checkbox">
-            <input name="{$field.name}" type="checkbox" value="1" {if $field.value}checked="checked"{/if} {if $field.required}required{/if}>
+            <input name="{$field.name}" {if $field.name === 'optin_partner'}onclick="$('.optin_partner').collapse('toggle')"{/if} type="checkbox" value="1" {if $field.value}checked="checked"{/if} {if $field.required}required{/if}>
             <span><i class="material-icons checkbox-checked">&#xE5CA;</i></span>
             <label>{$field.label nofilter}</label >
           </span>
