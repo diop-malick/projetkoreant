@@ -66,17 +66,7 @@
         position: relative;
         height: 2px;
         width: 145%;
-        background: linear-gradient(
-          90deg,
-          rgba(200, 200, 200, 0.05),
-          rgba(225, 225, 225, 0.15) 1%,
-          rgba(225, 225, 225, 0.25) 4%,
-          rgba(255, 255, 255, 0.9) 8%,
-          rgba(255, 255, 255, 0.9) 92%,
-          rgba(225, 225, 225, 0.25) 96%,
-          rgba(225, 225, 225, 0.15) 99%,
-          rgba(200, 200, 200, 0.05)
-        );
+        background: linear-gradient( 90deg, rgba(200, 200, 200, 0.05), rgba(225, 225, 225, 0.15) 1%, rgba(225, 225, 225, 0.25) 4%, rgba(255, 255, 255, 0.9) 8%, rgba(255, 255, 255, 0.9) 92%, rgba(225, 225, 225, 0.25) 96%, rgba(225, 225, 225, 0.15) 99%, rgba(200, 200, 200, 0.05));
         bottom: -2px;
         left: -10%;
       }
@@ -128,6 +118,7 @@
   h1 {
     padding-top: 1.25em;
     margin-bottom: 1.5em;
+    visibility: hidden;
   }
   a {
     min-height: 48vh;
@@ -193,12 +184,13 @@
     }
   }
   .ido-bottom-banner {
-    min-height: 40vh;
+    min-height: 45vh;
     a {
-      min-height: 40vh;
+      min-height: 45vh;
     }
   }
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .ido-top-banner {
     background-size: 135%;
@@ -217,9 +209,9 @@
     }
   }
   .ido-bottom-banner {
-    min-height: 56vh;
+    min-height: 60vh;
     a {
-      min-height: 56vh;
+      min-height: 60vh;
     }
   }
 }
