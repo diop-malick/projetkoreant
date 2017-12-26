@@ -22,7 +22,7 @@
  * @license   http://opensource.org/licenses/osl-3.0.php Open Software License (OSL 3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
- <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=GFS+Didot" rel="stylesheet">
 
 {foreach $stylesheets.external as $stylesheet}
   <link rel="stylesheet" href="{$stylesheet.uri}" type="text/css" media="{$stylesheet.media}">
